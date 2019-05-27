@@ -5,10 +5,10 @@ namespace Algorithms.Search
 {
     public class BinarySearch
     {
-        public static int Search(int[] array, int item)
+        public static int Search(int[] array, int item, int left = -1, int right = -2)
         {
-            var l = 0;
-            var r = array.Length;
+            var l = left == -1 ? 0 : left;
+            var r = right == -1 ? array.Length : right;
             
             while (l < r)
             {
