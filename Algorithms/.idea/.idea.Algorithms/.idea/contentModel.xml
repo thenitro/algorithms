@@ -18,6 +18,12 @@
         <e p="Sort" t="Include">
           <e p="BinarySort.cs" t="Include" />
         </e>
+        <e p="Structure" t="Include">
+          <e p="Tree" t="Include">
+            <e p="BinarySearchTree.cs" t="Include" />
+            <e p="BinaryTreeNode.cs" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="Algorithms.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

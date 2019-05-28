@@ -1,6 +1,7 @@
 ﻿using System;
 using Algorithms.Search;
 using Algorithms.Sort;
+using Algorithms.Structure.Tree;
 
 namespace Algorithms
 {
@@ -8,10 +9,27 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestBinarySort();
+            TestBinarySearchTree();
+            //TestBinarySort();
             //TestBinarySearch();
         }
 
+        private static void TestBinarySearchTree()
+        {
+            var tree = new BinarySearchTree();
+                tree.Insert(100);
+            
+            tree.Insert(99);
+            tree.Insert(101);
+            tree.Insert(80);
+            tree.Insert(120);
+            
+            tree.Print();
+            
+            Console.WriteLine(tree.Has(80));
+            Console.WriteLine(tree.Has(121));
+        }
+        
         private static void TestBinarySort()
         {
             var arr = new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1};
