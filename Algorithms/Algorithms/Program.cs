@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using Algorithms.Other;
 using Algorithms.Search;
 using Algorithms.Sort;
 using Algorithms.Structure.Tree;
@@ -9,9 +11,18 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestBinarySearchTree();
+            TestFibonacci();
+            //TestBinarySearchTree();
             //TestBinarySort();
             //TestBinarySearch();
+        }
+
+        private static void TestFibonacci()
+        {
+            Fibonacci.Create(0).ToList().ForEach(x => Console.Write(x + " ")); Console.WriteLine();
+            Fibonacci.Create(1).ToList().ForEach(x => Console.Write(x + " ")); Console.WriteLine();
+            Fibonacci.Create(2).ToList().ForEach(x => Console.Write(x + " ")); Console.WriteLine();
+            Fibonacci.Create(10).ToList().ForEach(x => Console.Write(x + " ")); Console.WriteLine();
         }
 
         private static void TestBinarySearchTree()
