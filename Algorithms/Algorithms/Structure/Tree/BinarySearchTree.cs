@@ -95,5 +95,67 @@ namespace Algorithms.Structure.Tree
             
             return false;
         }
+
+        public void Delete(int value)
+        {
+            DeleteNode(Head, value);
+        }
+
+        private BinaryTreeNode DeleteNode(BinaryTreeNode node, int value)
+        {
+            if (node == null)
+            {
+                return node;
+            }
+
+            if (value > node.Value)
+            {
+                node.Left = DeleteNode(node.Left, value);
+            }
+            else if (value < node.Value)
+            {
+                node.Right = DeleteNode(node.Right, value);
+            }
+            else
+            {
+                if (node.Left == null)
+                {
+                    return node.Right;
+                } else if (node.Right == null)
+                {
+                    return node.Left;
+                }
+
+                node.Value = MinValue(node.Right);
+                node.Right = DeleteNode(node.Right, node.Value);
+            }
+
+            return node;
+        }
+
+        private int MinValue(BinaryTreeNode node)
+        {
+            var result = node.Value;
+
+            while (node.Left != null)
+            {
+                result = node.Value;
+                node = node.Left;
+            }
+
+            return result;
+        }
+
+        public void TraverseNode(BinaryTreeNode node, Action<BinaryTreeNode> action)
+        {
+            if (node == null)
+            {
+                return;
+            }
+            
+            action(node);
+            TraverseNode(node.Left, action);
+            TraverseNode(node.Right, action);
+        }
     }
 }

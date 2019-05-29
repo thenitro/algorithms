@@ -11,8 +11,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestFibonacci();
-            //TestBinarySearchTree();
+            //TestFibonacci();
+            TestBinarySearchTree();
             //TestBinarySort();
             //TestBinarySearch();
         }
@@ -39,6 +39,14 @@ namespace Algorithms
             
             Console.WriteLine(tree.Has(80));
             Console.WriteLine(tree.Has(121));
+            
+            Console.WriteLine(tree.Has(100));
+            tree.Delete(100);
+            Console.WriteLine(tree.Has(100));
+            
+            tree.Print();
+            
+            tree.TraverseNode(tree.Head, node => { Console.Write(node.Value + ", ");});
         }
         
         private static void TestBinarySort()
