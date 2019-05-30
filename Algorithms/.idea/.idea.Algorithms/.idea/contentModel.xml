@@ -23,6 +23,8 @@
         </e>
         <e p="Structure" t="Include">
           <e p="Tree" t="Include">
+            <e p="AvlNode.cs" t="Include" />
+            <e p="AvlTree.cs" t="Include" />
             <e p="BinarySearchTree.cs" t="Include" />
             <e p="BinaryTreeNode.cs" t="Include" />
           </e>

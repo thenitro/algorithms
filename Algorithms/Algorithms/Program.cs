@@ -11,10 +11,42 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
+            TestAvlTree();
             //TestFibonacci();
-            TestBinarySearchTree();
+            //TestBinarySearchTree();
             //TestBinarySort();
             //TestBinarySearch();
+        }
+
+        private static void TestAvlTree()
+        {
+            var tree = new AvlTree();
+                
+                tree.Insert(100);
+                tree.Insert(99);
+                tree.Insert(101);
+                tree.Insert(80);
+                tree.Insert(120);
+                tree.Insert(140);
+                tree.Insert(150);
+                tree.Insert(160);
+                tree.Insert(170);
+                
+                tree.Print();
+                
+            var binarySearchTree = new BinarySearchTree();
+               
+                binarySearchTree.Insert(100);
+                binarySearchTree.Insert(99);
+                binarySearchTree.Insert(101);
+                binarySearchTree.Insert(80);
+                binarySearchTree.Insert(120);
+                binarySearchTree.Insert(140);
+                binarySearchTree.Insert(150);
+                binarySearchTree.Insert(160);
+                binarySearchTree.Insert(170);
+                
+                binarySearchTree.Print();
         }
 
         private static void TestFibonacci()
