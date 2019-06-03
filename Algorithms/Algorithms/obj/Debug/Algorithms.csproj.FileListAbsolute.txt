@@ -8,3 +8,9 @@ E:\code\algorithms\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
 E:\code\algorithms\Algorithms\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
 E:\code\algorithms\Algorithms\Algorithms\obj\Debug\Algorithms.exe
 E:\code\algorithms\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
+D:\algorithms\Algorithms\Algorithms\bin\Debug\Algorithms.exe
+D:\algorithms\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
+D:\algorithms\Algorithms\Algorithms\obj\Debug\Algorithms.csprojAssemblyReference.cache
+D:\algorithms\Algorithms\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+D:\algorithms\Algorithms\Algorithms\obj\Debug\Algorithms.exe
+D:\algorithms\Algorithms\Algorithms\obj\Debug\Algorithms.pdb

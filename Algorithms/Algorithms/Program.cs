@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Algorithms.Concurency.Examples;
 using Algorithms.Other;
 using Algorithms.Search;
 using Algorithms.Sort;
@@ -11,11 +12,17 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestAvlTree();
+            TestLock();
+            //TestAvlTree();
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySort();
             //TestBinarySearch();
+        }
+
+        private static void TestLock()
+        {
+            new LockExample();
         }
 
         private static void TestAvlTree()
