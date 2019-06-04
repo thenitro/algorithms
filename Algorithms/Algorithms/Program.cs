@@ -4,6 +4,7 @@ using Algorithms.Concurency.Examples;
 using Algorithms.Other;
 using Algorithms.Search;
 using Algorithms.Sort;
+using Algorithms.Structure.Queue;
 using Algorithms.Structure.Tree;
 
 namespace Algorithms
@@ -12,12 +13,43 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestLock();
+            TestPriorityQueue();
+            //TestLock();
             //TestAvlTree();
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySort();
             //TestBinarySearch();
+        }
+
+        private static void TestPriorityQueue()
+        {
+            var queue = new PriorityQueue<int>();
+            
+            queue.Enqueue(5);
+            queue.Enqueue(1);
+            queue.Enqueue(0);
+            queue.Enqueue(2);
+            queue.Enqueue(7);
+            
+            Console.WriteLine(queue.ToString());
+            
+            Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.Dequeue());
+            
+            Console.WriteLine(queue.ToString());
+            
+            queue.Enqueue(5);
+            queue.Enqueue(1);
+            queue.Enqueue(0);
+            queue.Enqueue(2);
+            queue.Enqueue(7);
+            
+            Console.WriteLine(queue.ToString());
         }
 
         private static void TestLock()
