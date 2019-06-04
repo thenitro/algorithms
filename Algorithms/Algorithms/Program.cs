@@ -13,13 +13,20 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestPriorityQueue();
+            TestMutex();
+            //TestPriorityQueue();
             //TestLock();
             //TestAvlTree();
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySort();
             //TestBinarySearch();
+        }
+
+        private static void TestMutex()
+        {
+            //new LocalMutexExample();
+            new TimeoutMutexExample();
         }
 
         private static void TestPriorityQueue()
