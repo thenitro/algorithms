@@ -13,7 +13,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestMutex();
+            TestSemaphore();
+            //TestMutex();
             //TestPriorityQueue();
             //TestLock();
             //TestAvlTree();
@@ -21,6 +22,11 @@ namespace Algorithms
             //TestBinarySearchTree();
             //TestBinarySort();
             //TestBinarySearch();
+        }
+
+        private static void TestSemaphore()
+        {
+            new SemaphoreExample();
         }
 
         private static void TestMutex()

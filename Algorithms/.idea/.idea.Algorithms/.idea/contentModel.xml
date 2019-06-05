@@ -11,6 +11,7 @@
           <e p="Examples" t="Include">
             <e p="LocalMutexExample.cs" t="Include" />
             <e p="LockExample.cs" t="Include" />
+            <e p="SemaphoreExample.cs" t="Include" />
             <e p="TimeoutMutexExample.cs" t="Include" />
           </e>
         </e>

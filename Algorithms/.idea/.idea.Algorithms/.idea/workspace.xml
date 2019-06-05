@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa342eea-1eda-4723-936d-aec94a22dd17" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithms/Algorithms.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/Algorithms.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithms/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithms/bin/Debug/Algorithms.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/bin/Debug/Algorithms.exe" afterDir="false" />
@@ -17,74 +18,59 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithms/Concurency/Examples/LocalMutexExample.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-              <folding>
-                <marker date="1559639653627" expanded="true" signature="6:37" ph="..." />
-                <marker date="1559639653627" expanded="true" signature="79:1345" ph="{...}" />
-                <marker date="1559639653627" expanded="true" signature="116:1343" ph="{...}" />
-                <marker date="1559639653627" expanded="true" signature="298:571" ph="{...}" />
-                <marker date="1559639653627" expanded="true" signature="358:561" ph="{...}" />
-                <marker date="1559639653627" expanded="true" signature="613:745" ph="{...}" />
-                <marker date="1559639653627" expanded="true" signature="676:735" ph="{...}" />
-                <marker date="1559639653627" expanded="true" signature="788:1337" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithms/Concurency/Examples/TimeoutMutexExample.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="36" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="36" />
-              <folding>
-                <marker date="1559640133225" expanded="true" signature="6:37" ph="..." />
-                <marker date="1559640133225" expanded="true" signature="79:1631" ph="{...}" />
-                <marker date="1559640133225" expanded="true" signature="118:1629" ph="{...}" />
-                <marker date="1559640133225" expanded="true" signature="302:575" ph="{...}" />
-                <marker date="1559640133225" expanded="true" signature="362:565" ph="{...}" />
-                <marker date="1559640133225" expanded="true" signature="617:749" ph="{...}" />
-                <marker date="1559640133225" expanded="true" signature="680:739" ph="{...}" />
-                <marker date="1559640133225" expanded="true" signature="792:1541" ph="{...}" />
-                <marker date="1559640133225" expanded="true" signature="930:1390" ph="{...}" />
-                <marker date="1559640133225" expanded="true" signature="1407:1531" ph="{...}" />
-                <marker date="1559640133225" expanded="true" signature="1573:1623" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Algorithms/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-              <folding>
-                <marker date="1559640157736" expanded="false" signature="6:209" ph="..." />
-                <marker date="1559640157736" expanded="true" signature="231:5257" ph="{...}" />
-                <marker date="1559640157736" expanded="true" signature="260:5255" ph="{...}" />
-                <marker date="1559640157736" expanded="true" signature="313:583" ph="{...}" />
-                <marker date="1559640157736" expanded="true" signature="361:573" ph="/* TestPriorityQueue(); ... */" />
-                <marker date="1559640157736" expanded="true" signature="624:722" ph="{...}" />
-                <marker date="1559640157736" expanded="true" signature="771:1654" ph="{...}" />
-                <marker date="1559640157736" expanded="true" signature="1694:1745" ph="{...}" />
-                <marker date="1559640157736" expanded="true" signature="1788:2777" ph="{...}" />
-                <marker date="1559640157736" expanded="true" signature="2822:3243" ph="{...}" />
-                <marker date="1559640157736" expanded="true" signature="3295:3945" ph="{...}" />
-                <marker date="1559640157736" expanded="true" signature="3999:4260" ph="{...}" />
-                <marker date="1559640157736" expanded="true" signature="4167:4250" ph="{...}" />
-                <marker date="1559640157736" expanded="true" signature="4308:5249" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Algorithms/Program.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+                  <folding>
+                    <marker date="1559734016950" expanded="false" signature="6:209" ph="..." />
+                    <marker date="1559734016950" expanded="true" signature="231:5389" ph="{...}" />
+                    <marker date="1559734016950" expanded="true" signature="260:5387" ph="{...}" />
+                    <marker date="1559734016950" expanded="true" signature="313:614" ph="{...}" />
+                    <marker date="1559734016950" expanded="true" signature="365:604" ph="/* TestMutex(); ... */" />
+                    <marker date="1559734016950" expanded="true" signature="659:715" ph="{...}" />
+                    <marker date="1559734016950" expanded="true" signature="756:854" ph="{...}" />
+                    <marker date="1559734016950" expanded="true" signature="903:1786" ph="{...}" />
+                    <marker date="1559734016950" expanded="true" signature="1826:1877" ph="{...}" />
+                    <marker date="1559734016950" expanded="true" signature="1920:2909" ph="{...}" />
+                    <marker date="1559734016950" expanded="true" signature="2954:3375" ph="{...}" />
+                    <marker date="1559734016950" expanded="true" signature="3427:4077" ph="{...}" />
+                    <marker date="1559734016950" expanded="true" signature="4131:4392" ph="{...}" />
+                    <marker date="1559734016950" expanded="true" signature="4299:4382" ph="{...}" />
+                    <marker date="1559734016950" expanded="true" signature="4440:5381" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Algorithms/Concurency/Examples/SemaphoreExample.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="414">
+                  <caret line="39" column="96" selection-start-line="39" selection-start-column="96" selection-end-line="39" selection-end-column="96" />
+                  <folding>
+                    <marker date="1559733983924" expanded="false" signature="6:37" ph="..." />
+                    <marker date="1559733983924" expanded="true" signature="79:1240" ph="{...}" />
+                    <marker date="1559733983924" expanded="true" signature="115:1238" ph="{...}" />
+                    <marker date="1559733983924" expanded="true" signature="233:682" ph="{...}" />
+                    <marker date="1559733983924" expanded="true" signature="325:468" ph="{...}" />
+                    <marker date="1559733983924" expanded="true" signature="723:1232" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -103,6 +89,7 @@
     <setting file="file://$PROJECT_DIR$/Algorithms/Structure/Queue/PriorityQueue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Algorithms/Concurency/Examples/TimeoutMutexExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Algorithms/Search/BinarySearch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Algorithms/Concurency/Examples/SemaphoreExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Algorithms/Concurency/Examples/LockExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/0d/5e6fdaf3/Mutex.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Algorithms/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -126,6 +113,7 @@
         <option value="$PROJECT_DIR$/Algorithms/Structure/Queue/PriorityQueue.cs" />
         <option value="$PROJECT_DIR$/Algorithms/Concurency/Examples/LocalMutexExample.cs" />
         <option value="$PROJECT_DIR$/Algorithms/Concurency/Examples/TimeoutMutexExample.cs" />
+        <option value="$PROJECT_DIR$/Algorithms/Concurency/Examples/SemaphoreExample.cs" />
         <option value="$PROJECT_DIR$/Algorithms/Program.cs" />
       </list>
     </option>
@@ -234,12 +222,12 @@
       <workItem from="1559201489962" duration="3523000" />
       <workItem from="1559542875512" duration="2200000" />
       <workItem from="1559546572238" duration="982000" />
-      <workItem from="1559636047176" duration="4128000" />
+      <workItem from="1559636047176" duration="7595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28566000" />
+    <option name="totallyTimeSpent" value="32033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -252,7 +240,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.123667374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -261,7 +248,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -719,7 +706,7 @@
     <entry file="file://$PROJECT_DIR$/Algorithms/Concurency/Examples/LocalMutexExample.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
-          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
           <folding>
             <marker date="1559639653627" expanded="true" signature="6:37" ph="..." />
             <marker date="1559639653627" expanded="true" signature="79:1345" ph="{...}" />
@@ -753,25 +740,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/Concurency/Examples/SemaphoreExample.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="39" column="96" selection-start-line="39" selection-start-column="96" selection-end-line="39" selection-end-column="96" />
+          <folding>
+            <marker date="1559733983924" expanded="false" signature="6:37" ph="..." />
+            <marker date="1559733983924" expanded="true" signature="79:1240" ph="{...}" />
+            <marker date="1559733983924" expanded="true" signature="115:1238" ph="{...}" />
+            <marker date="1559733983924" expanded="true" signature="233:682" ph="{...}" />
+            <marker date="1559733983924" expanded="true" signature="325:468" ph="{...}" />
+            <marker date="1559733983924" expanded="true" signature="723:1232" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithms/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        <state relative-caret-position="105">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
-            <marker date="1559640157736" expanded="false" signature="6:209" ph="..." />
-            <marker date="1559640157736" expanded="true" signature="231:5257" ph="{...}" />
-            <marker date="1559640157736" expanded="true" signature="260:5255" ph="{...}" />
-            <marker date="1559640157736" expanded="true" signature="313:583" ph="{...}" />
-            <marker date="1559640157736" expanded="true" signature="361:573" ph="/* TestPriorityQueue(); ... */" />
-            <marker date="1559640157736" expanded="true" signature="624:722" ph="{...}" />
-            <marker date="1559640157736" expanded="true" signature="771:1654" ph="{...}" />
-            <marker date="1559640157736" expanded="true" signature="1694:1745" ph="{...}" />
-            <marker date="1559640157736" expanded="true" signature="1788:2777" ph="{...}" />
-            <marker date="1559640157736" expanded="true" signature="2822:3243" ph="{...}" />
-            <marker date="1559640157736" expanded="true" signature="3295:3945" ph="{...}" />
-            <marker date="1559640157736" expanded="true" signature="3999:4260" ph="{...}" />
-            <marker date="1559640157736" expanded="true" signature="4167:4250" ph="{...}" />
-            <marker date="1559640157736" expanded="true" signature="4308:5249" ph="{...}" />
+            <marker date="1559734016950" expanded="false" signature="6:209" ph="..." />
+            <marker date="1559734016950" expanded="true" signature="231:5389" ph="{...}" />
+            <marker date="1559734016950" expanded="true" signature="260:5387" ph="{...}" />
+            <marker date="1559734016950" expanded="true" signature="313:614" ph="{...}" />
+            <marker date="1559734016950" expanded="true" signature="365:604" ph="/* TestMutex(); ... */" />
+            <marker date="1559734016950" expanded="true" signature="659:715" ph="{...}" />
+            <marker date="1559734016950" expanded="true" signature="756:854" ph="{...}" />
+            <marker date="1559734016950" expanded="true" signature="903:1786" ph="{...}" />
+            <marker date="1559734016950" expanded="true" signature="1826:1877" ph="{...}" />
+            <marker date="1559734016950" expanded="true" signature="1920:2909" ph="{...}" />
+            <marker date="1559734016950" expanded="true" signature="2954:3375" ph="{...}" />
+            <marker date="1559734016950" expanded="true" signature="3427:4077" ph="{...}" />
+            <marker date="1559734016950" expanded="true" signature="4131:4392" ph="{...}" />
+            <marker date="1559734016950" expanded="true" signature="4299:4382" ph="{...}" />
+            <marker date="1559734016950" expanded="true" signature="4440:5381" ph="{...}" />
           </folding>
         </state>
       </provider>
