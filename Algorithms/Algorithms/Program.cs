@@ -4,6 +4,7 @@ using Algorithms.Concurency.Examples;
 using Algorithms.Other;
 using Algorithms.Search;
 using Algorithms.Sort;
+using Algorithms.Structure;
 using Algorithms.Structure.Queue;
 using Algorithms.Structure.Tree;
 
@@ -13,7 +14,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestSemaphore();
+            TestGraph();
+            //TestSemaphore();
             //TestMutex();
             //TestPriorityQueue();
             //TestLock();
@@ -22,6 +24,20 @@ namespace Algorithms
             //TestBinarySearchTree();
             //TestBinarySort();
             //TestBinarySearch();
+        }
+
+        private static void TestGraph()
+        {
+            var graph = new Graph();
+            
+            graph.AddEdge(0, 1);
+            graph.AddEdge(0, 2);
+            graph.AddEdge(1, 2);
+            graph.AddEdge(2, 0);
+            graph.AddEdge(2, 3);
+            graph.AddEdge(3, 3);
+            
+            graph.DFS(2);
         }
 
         private static void TestSemaphore()

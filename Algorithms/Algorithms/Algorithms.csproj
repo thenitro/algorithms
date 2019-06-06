@@ -47,6 +47,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search\BinarySearch.cs" />
     <Compile Include="Sort\BinarySort.cs" />
+    <Compile Include="Structure\Graph\Graph.cs" />
     <Compile Include="Structure\Queue\PriorityQueue.cs" />
     <Compile Include="Structure\Tree\AvlNode.cs" />
     <Compile Include="Structure\Tree\AvlTree.cs" />
