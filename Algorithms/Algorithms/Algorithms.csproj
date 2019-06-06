@@ -40,6 +40,8 @@
   <ItemGroup>
     <Compile Include="Concurency\Examples\LocalMutexExample.cs" />
     <Compile Include="Concurency\Examples\LockExample.cs" />
+    <Compile Include="Concurency\Examples\MonitorCombinedExample.cs" />
+    <Compile Include="Concurency\Examples\MonitorsSyncExample.cs" />
     <Compile Include="Concurency\Examples\SemaphoreExample.cs" />
     <Compile Include="Concurency\Examples\TimeoutMutexExample.cs" />
     <Compile Include="Other\Fibonacci.cs" />

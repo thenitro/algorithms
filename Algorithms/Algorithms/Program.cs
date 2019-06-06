@@ -14,7 +14,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestGraph();
+            TestMonitor();
+            //TestGraph();
             //TestSemaphore();
             //TestMutex();
             //TestPriorityQueue();
@@ -24,6 +25,12 @@ namespace Algorithms
             //TestBinarySearchTree();
             //TestBinarySort();
             //TestBinarySearch();
+        }
+
+        private static void TestMonitor()
+        {
+            //new MonitorsSyncExample();
+            new MonitorCombinedExample();
         }
 
         private static void TestGraph()
