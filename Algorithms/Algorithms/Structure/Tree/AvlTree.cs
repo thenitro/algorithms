@@ -1,4 +1,5 @@
 using System;
+using System.Dynamic;
 
 namespace Algorithms.Structure.Tree
 {
@@ -87,6 +88,98 @@ namespace Algorithms.Structure.Tree
             }
 
             return node;
+        }
+
+        public AvlNode DeleteNode(AvlNode root, int key)
+        {
+            if (root == null)
+            {
+                return root;
+            }
+
+            if (key < root.Value)
+            {
+                root.Left = DeleteNode(root.Left, key);
+            } else if (key > root.Value)
+            {
+                root.Right = DeleteNode(root.Right, key);
+            }
+            else
+            {
+                if (root.Left == null || root.Right == null)
+                {
+                    AvlNode temp = null;
+
+                    if (temp == root.Left)
+                    {
+                        temp = root.Right;
+                    }
+                    else
+                    {
+                        temp = root.Left;
+                    }
+
+                    if (temp == null)
+                    {
+                        temp = root;
+                        root = null;
+                    }
+                    else
+                    {
+                        root = temp;
+                    }
+                }
+                else
+                {
+                    var temp = MinValueNode(root.Right);
+                    root.Value = temp.Value;
+                    root.Right = DeleteNode(root.Right, temp.Value);
+                }
+            }
+
+            if (root == null)
+            {
+                return root;
+            }
+
+            root.Height = Math.Max(Height(root.Left), Height(root.Right)) + 1;
+
+            var balance = GetBalance(root);
+
+            if (balance > 1 && GetBalance(root.Left) >= 0)
+            {
+                return RightRotate(root);
+            }
+
+            if (balance > 1 && GetBalance(root.Left) < 0)
+            {
+                root.Left = LeftRotate(root.Left);
+                return RightRotate(root);
+            }
+
+            if (balance < -1 && GetBalance(root.Right) <= 0)
+            {
+                return LeftRotate(root);
+            }
+
+            if (balance < -1 && GetBalance(root.Right) > 0)
+            {
+                root.Right = RightRotate(root.Right);
+                return LeftRotate(root);
+            }
+
+            return root;
+        }
+
+        private AvlNode MinValueNode(AvlNode node)
+        {
+            var current = node;
+            while (current.Left != null)
+            {
+                current = current.Left;
+            }
+
+            return current;
         }
 
         private AvlNode RightRotate(AvlNode node)

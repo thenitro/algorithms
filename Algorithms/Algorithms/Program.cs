@@ -14,13 +14,13 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestGraph();
+            TestAvlTree();
+            //TestGraph();
             //TestMonitor();
             //TestSemaphore();
             //TestMutex();
             //TestPriorityQueue();
             //TestLock();
-            //TestAvlTree();
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySort();
@@ -122,8 +122,12 @@ namespace Algorithms
                 tree.Insert(170);
                 
                 tree.Print();
+
+                tree.DeleteNode(tree.Head, 120);
                 
-            var binarySearchTree = new BinarySearchTree();
+                tree.Print();
+                
+            /*var binarySearchTree = new BinarySearchTree();
                
                 binarySearchTree.Insert(100);
                 binarySearchTree.Insert(99);
@@ -135,7 +139,7 @@ namespace Algorithms
                 binarySearchTree.Insert(160);
                 binarySearchTree.Insert(170);
                 
-                binarySearchTree.Print();
+                binarySearchTree.Print();*/
         }
 
         private static void TestFibonacci()
