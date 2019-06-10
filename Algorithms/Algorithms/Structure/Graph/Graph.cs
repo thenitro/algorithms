@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Net;
+using System.Linq;
 
 namespace Algorithms.Structure
 {
@@ -42,6 +42,50 @@ namespace Algorithms.Structure
                     TraverseDFS(i, visited);
                 }
             }
+        }
+
+        public Stack<int> TopologicalSort()
+        {
+            var stack = new Stack<int>();
+
+            var list = _graph.Keys;
+            var visited = new Dictionary<int, bool>();
+
+            foreach (var i in list)
+            {
+                if (visited.ContainsKey(i))
+                {
+                    continue;
+                }
+                
+                TopologicalSortTraverse(i, visited, stack);
+            }
+
+            return stack;
+        }
+
+        private void TopologicalSortTraverse(int v, Dictionary<int, bool> visited, Stack<int> stack)
+        {
+            visited[v] = true;
+
+            if (_graph.ContainsKey(v))
+            {
+                
+                var list = _graph[v];
+                
+                foreach (var i in _graph[v])
+                {
+                    if (visited.ContainsKey(i))
+                    {
+                        continue;
+                    }
+                
+                    TopologicalSortTraverse(i, visited, stack);
+                }                
+            }
+            
+            Console.WriteLine(v);
+            stack.Push(v);
         }
     }
 }

@@ -14,8 +14,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestMonitor();
-            //TestGraph();
+            TestGraph();
+            //TestMonitor();
             //TestSemaphore();
             //TestMutex();
             //TestPriorityQueue();
@@ -37,14 +37,28 @@ namespace Algorithms
         {
             var graph = new Graph();
             
-            graph.AddEdge(0, 1);
+            /*graph.AddEdge(0, 1);
             graph.AddEdge(0, 2);
             graph.AddEdge(1, 2);
             graph.AddEdge(2, 0);
             graph.AddEdge(2, 3);
             graph.AddEdge(3, 3);
             
-            graph.DFS(2);
+            graph.DFS(2);*/
+            
+            graph.AddEdge(5, 2);
+            graph.AddEdge(5, 0);
+            graph.AddEdge(4, 0);
+            graph.AddEdge(4, 1);
+            graph.AddEdge(2, 3);
+            graph.AddEdge(3, 1);
+
+            var stack = graph.TopologicalSort();
+
+            while (stack.Count > 0)
+            {
+                Console.Write(stack.Pop() + " ");
+            }
         }
 
         private static void TestSemaphore()
