@@ -43,6 +43,8 @@
             <e p="AvlTree.cs" t="Include" />
             <e p="BinarySearchTree.cs" t="Include" />
             <e p="BinaryTreeNode.cs" t="Include" />
+            <e p="RedBlackTree.cs" t="Include" />
+            <e p="RedBlackTreeNode.cs" t="Include" />
           </e>
         </e>
       </e>
