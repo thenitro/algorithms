@@ -9,8 +9,8 @@ namespace Algorithms.Structure.Tree
     {
         public RedBlackTreeNode Root;
 
-        private const bool BLACK = false;
-        private const bool RED = true;
+        public const bool BLACK = false;
+        public const bool RED = true;
 
         public void Print()
         {
@@ -39,8 +39,10 @@ namespace Algorithms.Structure.Tree
         public void Insert(int data)
         {
             var pt = new RedBlackTreeNode(data);
+                pt.Color = RED;
+                
             Root = BtInsert(Root, pt);
-            FixViolation(Root, pt);
+            FixViolation(pt);
         }
 
         private RedBlackTreeNode BtInsert(RedBlackTreeNode root, RedBlackTreeNode pt)
@@ -64,12 +66,10 @@ namespace Algorithms.Structure.Tree
             return root;
         }
 
-        private void FixViolation(RedBlackTreeNode root, RedBlackTreeNode pt)
+        private void FixViolation(RedBlackTreeNode pt)
         {
-            while (pt != root && pt.Color != BLACK && pt.Parent.Color == RED)
+            while (pt != Root && pt.Color != BLACK && pt.Parent.Color == RED)
             {
-                Console.WriteLine("FixViolation " + pt.Data);
-                
                 var parentPt = pt.Parent;
                 var grandParentPt = pt.Parent.Parent;
 
@@ -88,12 +88,12 @@ namespace Algorithms.Structure.Tree
                     {
                         if (pt == parentPt.Right)
                         {
-                            RotateLeft(root, parentPt);
+                            RotateLeft(parentPt);
                             pt = parentPt;
                             parentPt = pt.Parent;
                         }
 
-                        RotateRight(root, grandParentPt);
+                        RotateRight(grandParentPt);
 
                         var tmp = parentPt.Color;
                         parentPt.Color = grandParentPt.Color;
@@ -116,12 +116,12 @@ namespace Algorithms.Structure.Tree
                     {
                         if (pt == parentPt.Left)
                         {
-                            RotateRight(root, parentPt);
+                            RotateRight(parentPt);
                             pt = parentPt;
                             parentPt = pt.Parent;
                         }
 
-                        RotateLeft(root, grandParentPt);
+                        RotateLeft(grandParentPt);
                         
                         var tmp = parentPt.Color;
                         parentPt.Color = grandParentPt.Color;
@@ -132,10 +132,10 @@ namespace Algorithms.Structure.Tree
                 }
             }
 
-            root.Color = BLACK;
+            Root.Color = BLACK;
         }
 
-        private void RotateLeft(RedBlackTreeNode root, RedBlackTreeNode pt)
+        private void RotateLeft(RedBlackTreeNode pt)
         {
             var ptRight = pt.Right;
 
@@ -149,7 +149,7 @@ namespace Algorithms.Structure.Tree
 
             if (pt.Parent == null)
             {
-                root = ptRight;
+                Root = ptRight;
             }
             else if (pt == pt.Parent.Left)
             {
@@ -164,7 +164,7 @@ namespace Algorithms.Structure.Tree
             pt.Parent = ptRight;
         }
 
-        private void RotateRight(RedBlackTreeNode root, RedBlackTreeNode pt)
+        private void RotateRight(RedBlackTreeNode pt)
         {
             var ptLeft = pt.Left;
             
@@ -178,7 +178,7 @@ namespace Algorithms.Structure.Tree
 
             if (pt.Parent == null)
             {
-                root = ptLeft;
+                Root = ptLeft;
             } 
             else if (pt == pt.Parent.Left)
             {

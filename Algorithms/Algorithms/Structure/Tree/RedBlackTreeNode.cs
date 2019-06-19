@@ -11,6 +11,7 @@ namespace Algorithms.Structure.Tree
         public RedBlackTreeNode(int data)
         {
             Data = data;
+            Color = RedBlackTree.BLACK;
         }
     }
 }
