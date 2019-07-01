@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Algorithms.Concurency.Examples;
+using Algorithms.Median;
 using Algorithms.Other;
 using Algorithms.Search;
 using Algorithms.Sort;
@@ -14,7 +15,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestRbTree();
+            TestFindMedian();
+            //TestRbTree();
             //TestAvlTree();
             //TestGraph();
             //TestMonitor();
@@ -26,6 +28,17 @@ namespace Algorithms
             //TestBinarySearchTree();
             //TestBinarySort();
             //TestBinarySearch();
+        }
+
+        private static void TestFindMedian()
+        {
+            var array = new int[] {4, 5, 6, 7, 1, 2, 3, 10, 11, 12, 20, 30, 40};
+            
+            Console.WriteLine(Median.Median.MedianSort(array));
+            
+            var array2 = new int[] {4, 5, 6, 7, 1, 2, 3, 10, 11, 12, 20, 30, 40};
+            
+            Console.WriteLine(Median.Median.QuickSelectMedian(array));
         }
 
         private static void TestRbTree()

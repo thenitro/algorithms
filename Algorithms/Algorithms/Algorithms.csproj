@@ -44,6 +44,7 @@
     <Compile Include="Concurency\Examples\MonitorsSyncExample.cs" />
     <Compile Include="Concurency\Examples\SemaphoreExample.cs" />
     <Compile Include="Concurency\Examples\TimeoutMutexExample.cs" />
+    <Compile Include="Median\Median.cs" />
     <Compile Include="Other\Fibonacci.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

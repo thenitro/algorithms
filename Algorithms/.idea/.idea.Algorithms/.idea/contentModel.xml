@@ -17,6 +17,9 @@
             <e p="TimeoutMutexExample.cs" t="Include" />
           </e>
         </e>
+        <e p="Median" t="Include">
+          <e p="Median.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="Other" t="Include">
           <e p="Fibonacci.cs" t="Include" />
