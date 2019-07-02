@@ -15,7 +15,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestFindMedian();
+            TestSort();
+            //TestFindMedian();
             //TestRbTree();
             //TestAvlTree();
             //TestGraph();
@@ -26,7 +27,6 @@ namespace Algorithms
             //TestLock();
             //TestFibonacci();
             //TestBinarySearchTree();
-            //TestBinarySort();
             //TestBinarySearch();
         }
 
@@ -203,16 +203,27 @@ namespace Algorithms
             tree.TraverseNode(tree.Head, node => { Console.Write(node.Value + ", ");});
         }
         
-        private static void TestBinarySort()
+        private static void TestSort()
         {
             var arr = new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1};
 
-            BinarySort.Sort(arr);
+            Sorting.BinarySort(arr);
             
             for (var i = 0; i < arr.Length; i++)
             {
                 Console.Write(arr[i]);                
             }
+            Console.WriteLine();
+            
+            arr = new int[] {3, 2, 1, 9, 8, 7, 6, 5, 4 };
+
+            Sorting.QuickSort(arr);
+            
+            for (var i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i]);                
+            }
+            Console.WriteLine();
         }
 
         private static void TestBinarySearch()
