@@ -1,6 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Runtime.InteropServices;
+using System.Security.Principal;
 
 namespace Algorithms.Median
 {
@@ -59,6 +62,48 @@ namespace Algorithms.Median
             {
                 return QuickSelectMedianHelper(highs.ToArray(), k - lows.Count() - pivots.Count());
             }
+        }
+
+        public static int PickPivotMedian(int[] array)
+        {
+            if (array.Length < 5)
+            {
+                return MedianSort(array);
+            }
+
+            var chunks = PickPivotMedianHelper(array, 5);
+            var fullChunks = chunks.Where(x => x.Count == 5).ToList();
+                fullChunks.ForEach(x => x.Sort());
+            
+            var medians = new int[fullChunks.Count];
+            var count = 0;
+            
+            fullChunks.ForEach(x =>
+            {
+                medians[count] = x[2];
+                count++;
+            });
+            
+            return QuickSelectMedian(medians);
+        }
+
+        private static List<List<int>> PickPivotMedianHelper(int[] array, int chunkSize)
+        {
+            var result = new List<List<int>>();
+            var currentList = new List<int>();
+            
+            for (var i = 0; i < array.Length; i++)
+            {
+                currentList.Add(array[i]);
+                
+                if (currentList.Count == chunkSize)
+                {
+                    currentList = new List<int>();
+                    result.Add(currentList);
+                }
+            }
+            
+            return result;
         }
     }
 }

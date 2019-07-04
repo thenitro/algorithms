@@ -3,6 +3,7 @@ using System.Linq;
 using Algorithms.Concurency.Examples;
 using Algorithms.Median;
 using Algorithms.Other;
+using Algorithms.Pathfinding;
 using Algorithms.Search;
 using Algorithms.Sort;
 using Algorithms.Structure;
@@ -15,8 +16,9 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestSort();
+            TestPathfinding();
             //TestFindMedian();
+            //TestSort();
             //TestRbTree();
             //TestAvlTree();
             //TestGraph();
@@ -30,6 +32,31 @@ namespace Algorithms
             //TestBinarySearch();
         }
 
+        private static void TestPathfinding()
+        {
+            var pathfinding = new BfsPathfinding();
+
+            var grid = new char[][]
+            {
+                new char[] {'0', '*', '0', 's'},
+                new char[] {'*', '0', '*', '*'},
+                new char[] {'0', '*', '*', '*'},
+                new char[] {'d', '*', '*', '*'},
+            };
+            
+            Console.WriteLine(pathfinding.FindPath(grid));
+            
+            var grid2 = new char[][]
+            {
+                new char[] {'0', '*', '0', 's'},
+                new char[] {'*', '0', '*', '*'},
+                new char[] {'0', '*', '*', '*'},
+                new char[] {'d', '0', '0', '0'},
+            };
+            
+            Console.WriteLine(pathfinding.FindPath(grid2));
+        }
+
         private static void TestFindMedian()
         {
             var array = new int[] {4, 5, 6, 7, 1, 2, 3, 10, 11, 12, 20, 30, 40};
@@ -38,7 +65,11 @@ namespace Algorithms
             
             var array2 = new int[] {4, 5, 6, 7, 1, 2, 3, 10, 11, 12, 20, 30, 40};
             
-            Console.WriteLine(Median.Median.QuickSelectMedian(array));
+            Console.WriteLine(Median.Median.QuickSelectMedian(array2));
+            
+            var array3 = new int[] {4, 5, 6, 7, 1, 2, 3, 10, 11, 12, 20, 30, 40};
+            
+            Console.WriteLine(Median.Median.PickPivotMedian(array3));
         }
 
         private static void TestRbTree()
