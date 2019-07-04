@@ -4,6 +4,7 @@ using Algorithms.Concurency.Examples;
 using Algorithms.Median;
 using Algorithms.Other;
 using Algorithms.Pathfinding;
+using Algorithms.RandomTests;
 using Algorithms.Search;
 using Algorithms.Sort;
 using Algorithms.Structure;
@@ -16,7 +17,9 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new MinimumSwapsRequiredToSortAnArray();
+            TestGraphsPathfinding();
+            //new MinimumSwapsToMakeToArraysIdentical();
+            //new MinimumSwapsRequiredToSortAnArray();
             //TestPathfinding();
             //TestFindMedian();
             //TestSort();
@@ -31,6 +34,33 @@ namespace Algorithms
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySearch();
+        }
+
+        private static void TestGraphsPathfinding()
+        {
+            var graph = new Graph(false);
+                graph.AddEdge(0, 1);
+                graph.AddEdge(0, 3);
+                graph.AddEdge(1, 2);
+                graph.AddEdge(3, 4);
+                graph.AddEdge(3, 7);
+                graph.AddEdge(4, 5);
+                graph.AddEdge(4, 6);
+                graph.AddEdge(4, 7);
+                graph.AddEdge(5, 6);
+                graph.AddEdge(6, 7);
+
+            foreach (var i in new GraphsPathfinding().FindPath(graph, 0, 7))
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+            
+            foreach (var i in new GraphsPathfinding().FindPath(graph, 2, 6))
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
         }
 
         private static void TestPathfinding()
@@ -96,7 +126,7 @@ namespace Algorithms
 
         private static void TestGraph()
         {
-            var graph = new Graph();
+            var graph = new Graph(true);
             
             /*graph.AddEdge(0, 1);
             graph.AddEdge(0, 2);

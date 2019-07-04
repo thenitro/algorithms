@@ -47,10 +47,12 @@
     <Compile Include="Median\Median.cs" />
     <Compile Include="Other\Fibonacci.cs" />
     <Compile Include="Pathfinding\BfsPathfinding.cs" />
+    <Compile Include="Pathfinding\GraphsPathfinding.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomTasks\MinimumSwapsRequiredToSortAnArray.cs" />
+    <Compile Include="RandomTasks\MinimumSwapsToMakeToArraysIdentical.cs" />
     <Compile Include="Search\BinarySearch.cs" />
-    <Compile Include="Sort\MinimumSwapsRequiredToSortAnArray.cs" />
     <Compile Include="Sort\Sorting.cs" />
     <Compile Include="Structure\Graph\Graph.cs" />
     <Compile Include="Structure\Queue\PriorityQueue.cs" />

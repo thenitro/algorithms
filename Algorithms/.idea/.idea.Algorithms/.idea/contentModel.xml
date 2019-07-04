@@ -26,16 +26,20 @@
         </e>
         <e p="Pathfinding" t="Include">
           <e p="BfsPathfinding.cs" t="Include" />
+          <e p="GraphsPathfinding.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="RandomTasks" t="Include">
+          <e p="MinimumSwapsRequiredToSortAnArray.cs" t="Include" />
+          <e p="MinimumSwapsToMakeToArraysIdentical.cs" t="Include" />
+        </e>
         <e p="Search" t="Include">
           <e p="BinarySearch.cs" t="Include" />
         </e>
         <e p="Sort" t="Include">
-          <e p="MinimumSwapsRequiredToSortAnArray.cs" t="Include" />
           <e p="Sorting.cs" t="Include" />
         </e>
         <e p="Structure" t="Include">

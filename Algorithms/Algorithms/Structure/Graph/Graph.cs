@@ -6,21 +6,42 @@ namespace Algorithms.Structure
 {
     public class Graph
     {
+        private readonly List<int> Empty = new List<int>();
+        
         private Dictionary<int, List<int>> _graph;
 
-        public Graph()
+        private bool _directional;
+
+        public Graph(bool directional)
         {
+            _directional = directional;
             _graph = new Dictionary<int, List<int>>();
         }
 
         public void AddEdge(int u, int v)
         {
-            if (!_graph.ContainsKey(u))
+            AddHelper(_graph, u, v);
+            AddHelper(_graph, v, u);
+        }
+
+        private void AddHelper(Dictionary<int, List<int>> graph, int u, int v)
+        {
+            if (!graph.ContainsKey(u))
             {
-                _graph[u] = new List<int>();
+                graph[u] = new List<int>();
             }
             
-            _graph[u].Add(v);
+            graph[u].Add(v);
+        }
+
+        public List<int> GetNeighbors(int u)
+        {
+            if (_graph.ContainsKey(u))
+            {
+                return _graph[u];
+            }
+            
+            return Empty;
         }
 
         public void DFS(int v)
