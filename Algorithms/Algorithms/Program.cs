@@ -16,7 +16,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestPathfinding();
+            new MinimumSwapsRequiredToSortAnArray();
+            //TestPathfinding();
             //TestFindMedian();
             //TestSort();
             //TestRbTree();

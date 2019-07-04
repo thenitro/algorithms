@@ -50,6 +50,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search\BinarySearch.cs" />
+    <Compile Include="Sort\MinimumSwapsRequiredToSortAnArray.cs" />
     <Compile Include="Sort\Sorting.cs" />
     <Compile Include="Structure\Graph\Graph.cs" />
     <Compile Include="Structure\Queue\PriorityQueue.cs" />
