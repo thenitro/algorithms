@@ -17,7 +17,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestGraphsPathfinding();
+            TestExpressionTree();
+            //TestGraphsPathfinding();
             //new MinimumSwapsToMakeToArraysIdentical();
             //new MinimumSwapsRequiredToSortAnArray();
             //TestPathfinding();
@@ -34,6 +35,12 @@ namespace Algorithms
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySearch();
+        }
+
+        private static void TestExpressionTree()
+        {
+            var tree = new ExpressionTree("ab+ef*g*-");
+                tree.PrintInorder(tree.Head);
         }
 
         private static void TestGraphsPathfinding()

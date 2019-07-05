@@ -60,6 +60,8 @@
     <Compile Include="Structure\Tree\AvlTree.cs" />
     <Compile Include="Structure\Tree\BinarySearchTree.cs" />
     <Compile Include="Structure\Tree\BinaryTreeNode.cs" />
+    <Compile Include="Structure\Tree\ExpressionTree.cs" />
+    <Compile Include="Structure\Tree\ExpressionTreeNode.cs" />
     <Compile Include="Structure\Tree\RedBlackTree.cs" />
     <Compile Include="Structure\Tree\RedBlackTreeNode.cs" />
   </ItemGroup>
