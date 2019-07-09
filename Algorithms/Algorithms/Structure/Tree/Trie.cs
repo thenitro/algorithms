@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Linq.Expressions;
 
 namespace Algorithms.Structure.Tree
@@ -90,6 +92,65 @@ namespace Algorithms.Structure.Tree
             return root;
         }
 
+        public List<string> GetSuggestions(string query)
+        {
+            var result = new List<string>();
+            
+            var crawl = _root;
+            var length = query.Length;
+
+            for (var level = 0; level < length; level++)
+            {
+                var index = query[level] - 'a';
+
+                if (crawl.Children[index] == null)
+                {
+                    return result;
+                }
+
+                crawl = crawl.Children[index];
+            }
+
+            var isWord = crawl.IsEndOfWord == true;
+            var isLast = IsEmpty(crawl);
+
+            if (isWord && isLast)
+            {
+                return result;
+            }
+
+            if (!isLast)
+            {
+                GetSuggestionsHelper(crawl, query, result);
+            }
+
+            return result;
+        }
+
+        private void GetSuggestionsHelper(TrieNode root, string currentPrefix, List<string> result)
+        {
+            if (root.IsEndOfWord)
+            {
+                result.Add(currentPrefix);
+            }
+
+            if (IsEmpty(root))
+            {
+                return;
+            }
+
+            for (var i = 0; i < root.Children.Length; i++)
+            {
+                if (root.Children[i] == null)
+                {
+                    continue;
+                }
+
+                currentPrefix += (char)(97 + i);
+                GetSuggestionsHelper(root.Children[i], currentPrefix, result);
+            }
+        }
+        
         private bool IsEmpty(TrieNode root)
         {
             for (var i = 0; i < root.Children.Length; i++)

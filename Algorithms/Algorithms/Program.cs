@@ -56,6 +56,20 @@ namespace Algorithms
             
             Console.WriteLine(trie.Search("todelete"));
             Console.WriteLine(trie.Search("lol"));
+            
+            trie.Insert("h");
+            trie.Insert("he");
+            trie.Insert("hel");
+            trie.Insert("hell");
+            trie.Insert("hello");
+
+            var suggestions = trie.GetSuggestions("h");
+
+            foreach (var suggestion in suggestions)
+            {
+                Console.Write(suggestion + " ");
+            }
+            Console.WriteLine();
         }
 
         private static void TestExpressionTree()
