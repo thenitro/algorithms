@@ -10,11 +10,6 @@ namespace Algorithms.Structure.Tree
         {
             _root = new TrieNode();
         }
-
-        public void Print()
-        {
-            PrintHelper(_root, new char[20], 0);
-        }
         
         public void Insert(string key)
         {
