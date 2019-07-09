@@ -64,6 +64,8 @@
     <Compile Include="Structure\Tree\ExpressionTreeNode.cs" />
     <Compile Include="Structure\Tree\RedBlackTree.cs" />
     <Compile Include="Structure\Tree\RedBlackTreeNode.cs" />
+    <Compile Include="Structure\Tree\Trie.cs" />
+    <Compile Include="Structure\Tree\TrieNode.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Xml.Serialization;
 using Algorithms.Concurency.Examples;
 using Algorithms.Median;
 using Algorithms.Other;
@@ -17,7 +18,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestExpressionTree();
+            TestTrie();
+            //TestExpressionTree();
             //TestGraphsPathfinding();
             //new MinimumSwapsToMakeToArraysIdentical();
             //new MinimumSwapsRequiredToSortAnArray();
@@ -35,6 +37,25 @@ namespace Algorithms
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySearch();
+        }
+
+        private static void TestTrie()
+        {
+            var trie = new Trie();
+                trie.Insert("lol");
+                
+            Console.WriteLine(trie.Search("lol"));
+            Console.WriteLine(trie.Search("lo"));
+            Console.WriteLine(trie.Search("notlol"));
+            
+            trie.Insert("todelete");
+            
+            Console.WriteLine(trie.Search("todelete"));
+            
+            trie.Remove("todelete");
+            
+            Console.WriteLine(trie.Search("todelete"));
+            Console.WriteLine(trie.Search("lol"));
         }
 
         private static void TestExpressionTree()

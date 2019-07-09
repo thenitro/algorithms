@@ -58,6 +58,8 @@
             <e p="ExpressionTreeNode.cs" t="Include" />
             <e p="RedBlackTree.cs" t="Include" />
             <e p="RedBlackTreeNode.cs" t="Include" />
+            <e p="Trie.cs" t="Include" />
+            <e p="TrieNode.cs" t="Include" />
           </e>
         </e>
       </e>
