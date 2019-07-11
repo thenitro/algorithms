@@ -18,7 +18,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestTrie();
+            new FindTheNumberOfIslands();
+            //TestTrie();
             //TestExpressionTree();
             //TestGraphsPathfinding();
             //new MinimumSwapsToMakeToArraysIdentical();
@@ -69,8 +70,7 @@ namespace Algorithms
             {
                 Console.Write(suggestion + " ");
             }
-            Console.WriteLine();
-        }
+            Console.WriteLine();}
 
         private static void TestExpressionTree()
         {

@@ -33,6 +33,7 @@
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
         <e p="RandomTasks" t="Include">
+          <e p="FindTheNumberOfIslands.cs" t="Include" />
           <e p="MinimumSwapsRequiredToSortAnArray.cs" t="Include" />
           <e p="MinimumSwapsToMakeToArraysIdentical.cs" t="Include" />
         </e>
