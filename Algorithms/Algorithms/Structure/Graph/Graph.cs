@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace Algorithms.Structure
 {
@@ -11,17 +13,25 @@ namespace Algorithms.Structure
         private Dictionary<int, List<int>> _graph;
 
         private bool _directional;
+        private int _vertices;
 
         public Graph(bool directional)
         {
             _directional = directional;
+            _vertices = 0;
             _graph = new Dictionary<int, List<int>>();
         }
 
         public void AddEdge(int u, int v)
         {
+            _vertices = Math.Max(_vertices, Math.Max(u, v) + 1);
+            
             AddHelper(_graph, u, v);
-            AddHelper(_graph, v, u);
+
+            if (_directional == false)
+            {
+                AddHelper(_graph, v, u);
+            }
         }
 
         private void AddHelper(Dictionary<int, List<int>> graph, int u, int v)
@@ -85,6 +95,36 @@ namespace Algorithms.Structure
             return stack;
         }
 
+        public int[,] TransitiveClosure()
+        {
+            var result = new int[_vertices, _vertices];
+
+            for (var i = 0; i < _vertices; i++)
+            {
+                TransitiveClosureUtil(i, i, result);
+            }
+
+            return result;
+        }
+
+        private void TransitiveClosureUtil(int u, int v, int[,] result)
+        {
+            result[u, v] = 1;
+
+            if (!_graph.ContainsKey(v))
+            {
+                return;
+            }
+
+            foreach (var i in _graph[v])
+            {
+                if (result[u, i] == 0)
+                {
+                    TransitiveClosureUtil(u, i, result);
+                }
+            }
+        }
+        
         private void TopologicalSortTraverse(int v, Dictionary<int, bool> visited, Stack<int> stack)
         {
             visited[v] = true;

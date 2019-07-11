@@ -18,7 +18,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new FindTheNumberOfIslands();
+            TestGraph();
+            //new FindTheNumberOfIslands();
             //TestTrie();
             //TestExpressionTree();
             //TestGraphsPathfinding();
@@ -29,7 +30,6 @@ namespace Algorithms
             //TestSort();
             //TestRbTree();
             //TestAvlTree();
-            //TestGraph();
             //TestMonitor();
             //TestSemaphore();
             //TestMutex();
@@ -179,7 +179,7 @@ namespace Algorithms
             
             graph.DFS(2);*/
             
-            graph.AddEdge(5, 2);
+            /*graph.AddEdge(5, 2);
             graph.AddEdge(5, 0);
             graph.AddEdge(4, 0);
             graph.AddEdge(4, 1);
@@ -191,6 +191,24 @@ namespace Algorithms
             while (stack.Count > 0)
             {
                 Console.Write(stack.Pop() + " ");
+            }*/
+            
+            graph.AddEdge(0, 1);
+            graph.AddEdge(0, 2);
+            graph.AddEdge(1, 2);
+            graph.AddEdge(2, 0);
+            graph.AddEdge(2, 3);
+            graph.AddEdge(3, 3);
+
+            var result = graph.TransitiveClosure();
+
+            for (var i = 0; i < result.GetLength(0); i++)
+            {
+                for (var j = 0; j < result.GetLength(1); j++)
+                {
+                    Console.Write(result[i, j] + " ");
+                }
+                Console.WriteLine();
             }
         }
 
