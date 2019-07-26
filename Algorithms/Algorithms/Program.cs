@@ -6,6 +6,7 @@ using Algorithms.Median;
 using Algorithms.Other;
 using Algorithms.Pathfinding;
 using Algorithms.RandomTests;
+using Algorithms.RandomTests.CrackingCodingInterview;
 using Algorithms.Search;
 using Algorithms.Sort;
 using Algorithms.Structure;
@@ -18,7 +19,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestGraph();
+            new Task12();
+            //TestGraph();
             //new FindTheNumberOfIslands();
             //TestTrie();
             //TestExpressionTree();
