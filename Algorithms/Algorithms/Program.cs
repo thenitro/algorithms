@@ -19,10 +19,7 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new Task13();
-            //new Task12();
-            //new Task11();
-            //TestGraph();
+            TestGraph();
             //new FindTheNumberOfIslands();
             //TestTrie();
             //TestExpressionTree();

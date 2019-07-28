@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa342eea-1eda-4723-936d-aec94a22dd17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/Algorithms.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/Algorithms.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/bin/Debug/Algorithms.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/bin/Debug/Algorithms.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/bin/Debug/Algorithms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/bin/Debug/Algorithms.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/obj/Debug/Algorithms.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/obj/Debug/Algorithms.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/obj/Debug/Algorithms.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/obj/Debug/Algorithms.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/obj/Debug/Algorithms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/obj/Debug/Algorithms.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +59,7 @@
             <entry file="file://$PROJECT_DIR$/Algorithms/Program.cs">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="136">
-                  <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+                  <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
                   <folding>
                     <marker date="1564301697843" expanded="false" signature="6:408" ph="..." />
                     <marker date="1564301697843" expanded="true" signature="430:11639" ph="{...}" />
@@ -164,19 +156,19 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Algorithms/RandomTasks/CrackingCodingInterview/Task13.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+                <state relative-caret-position="714">
+                  <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
                   <folding>
-                    <marker date="1564302805171" expanded="true" signature="71:1606" ph="{...}" />
-                    <marker date="1564302805171" expanded="true" signature="97:1604" ph="{...}" />
-                    <marker date="1564302805171" expanded="true" signature="127:231" ph="{...}" />
-                    <marker date="1564302805171" expanded="true" signature="273:1598" ph="{...}" />
-                    <marker date="1564302805171" expanded="true" signature="390:1514" ph="{...}" />
-                    <marker date="1564302805171" expanded="true" signature="448:1409" ph="{...}" />
-                    <marker date="1564302805171" expanded="true" signature="584:762" ph="{...}" />
-                    <marker date="1564302805171" expanded="true" signature="1044:1148" ph="{...}" />
-                    <marker date="1564302805171" expanded="true" signature="1173:1334" ph="{...}" />
-                    <marker date="1564302805171" expanded="true" signature="1430:1500" ph="{...}" />
+                    <marker date="1564302880365" expanded="true" signature="71:1316" ph="{...}" />
+                    <marker date="1564302880365" expanded="true" signature="97:1314" ph="{...}" />
+                    <marker date="1564302880365" expanded="true" signature="127:327" ph="{...}" />
+                    <marker date="1564302880365" expanded="true" signature="369:1308" ph="{...}" />
+                    <marker date="1564302880365" expanded="true" signature="456:1273" ph="{...}" />
+                    <marker date="1564302880365" expanded="true" signature="514:1168" ph="{...}" />
+                    <marker date="1564302880365" expanded="true" signature="654:734" ph="{...}" />
+                    <marker date="1564302880365" expanded="true" signature="803:907" ph="{...}" />
+                    <marker date="1564302880365" expanded="true" signature="932:1093" ph="{...}" />
+                    <marker date="1564302880365" expanded="true" signature="1189:1259" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -395,12 +387,12 @@
       <workItem from="1562667278322" duration="5313000" />
       <workItem from="1562843224813" duration="2265000" />
       <workItem from="1564118962769" duration="2067000" />
-      <workItem from="1564301684742" duration="1119000" />
+      <workItem from="1564301684742" duration="1823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78246000" />
+    <option name="totallyTimeSpent" value="78950000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -413,7 +405,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15031983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -422,7 +413,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1113,7 +1104,7 @@
     <entry file="file://$PROJECT_DIR$/Algorithms/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding>
             <marker date="1564301697843" expanded="false" signature="6:408" ph="..." />
             <marker date="1564301697843" expanded="true" signature="430:11639" ph="{...}" />
@@ -1177,19 +1168,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithms/RandomTasks/CrackingCodingInterview/Task13.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        <state relative-caret-position="714">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
           <folding>
-            <marker date="1564302805171" expanded="true" signature="71:1606" ph="{...}" />
-            <marker date="1564302805171" expanded="true" signature="97:1604" ph="{...}" />
-            <marker date="1564302805171" expanded="true" signature="127:231" ph="{...}" />
-            <marker date="1564302805171" expanded="true" signature="273:1598" ph="{...}" />
-            <marker date="1564302805171" expanded="true" signature="390:1514" ph="{...}" />
-            <marker date="1564302805171" expanded="true" signature="448:1409" ph="{...}" />
-            <marker date="1564302805171" expanded="true" signature="584:762" ph="{...}" />
-            <marker date="1564302805171" expanded="true" signature="1044:1148" ph="{...}" />
-            <marker date="1564302805171" expanded="true" signature="1173:1334" ph="{...}" />
-            <marker date="1564302805171" expanded="true" signature="1430:1500" ph="{...}" />
+            <marker date="1564302880365" expanded="true" signature="71:1316" ph="{...}" />
+            <marker date="1564302880365" expanded="true" signature="97:1314" ph="{...}" />
+            <marker date="1564302880365" expanded="true" signature="127:327" ph="{...}" />
+            <marker date="1564302880365" expanded="true" signature="369:1308" ph="{...}" />
+            <marker date="1564302880365" expanded="true" signature="456:1273" ph="{...}" />
+            <marker date="1564302880365" expanded="true" signature="514:1168" ph="{...}" />
+            <marker date="1564302880365" expanded="true" signature="654:734" ph="{...}" />
+            <marker date="1564302880365" expanded="true" signature="803:907" ph="{...}" />
+            <marker date="1564302880365" expanded="true" signature="932:1093" ph="{...}" />
+            <marker date="1564302880365" expanded="true" signature="1189:1259" ph="{...}" />
           </folding>
         </state>
       </provider>
