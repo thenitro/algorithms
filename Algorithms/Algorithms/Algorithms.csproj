@@ -52,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomTasks\CrackingCodingInterview\Task11.cs" />
     <Compile Include="RandomTasks\CrackingCodingInterview\Task12.cs" />
+    <Compile Include="RandomTasks\CrackingCodingInterview\Task13.cs" />
     <Compile Include="RandomTasks\FindTheNumberOfIslands.cs" />
     <Compile Include="RandomTasks\MinimumSwapsRequiredToSortAnArray.cs" />
     <Compile Include="RandomTasks\MinimumSwapsToMakeToArraysIdentical.cs" />
