@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Linq;
-using System.Xml.Serialization;
 using Algorithms.Concurency.Examples;
-using Algorithms.Median;
 using Algorithms.Other;
 using Algorithms.Pathfinding;
 using Algorithms.RandomTests;
-using Algorithms.RandomTests.CrackingCodingInterview;
 using Algorithms.Search;
 using Algorithms.Sort;
 using Algorithms.Structure;
@@ -19,7 +16,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestGraph();
+            new FindTheRowWithMaximumNumberOfOnes();
+            //TestGraph();
             //new FindTheNumberOfIslands();
             //TestTrie();
             //TestExpressionTree();
