@@ -14,7 +14,7 @@ namespace Algorithms.RandomTests
                 new[] {1, 1, 1, 1},
                 new[] {0, 0, 0, 0},
             };
-
+            
             Console.WriteLine(2 == SolutionBruteForce(matrix));
             Console.WriteLine(2 == SolutionBinarySearch(matrix));
         }

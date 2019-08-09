@@ -61,6 +61,52 @@ namespace Algorithms.Structure
             TraverseDFS(v, visited);
         }
 
+        public bool IsCyclic()
+        {
+            var visited = new bool[_graph.Count];
+            var recStack = new bool[_graph.Count];
+
+            for (var i = 0; i < _graph.Count; i++)
+            {
+                if (IsCyclicUtil(i, visited, recStack))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private bool IsCyclicUtil(int i, bool[] visited, bool[] recursionStack)
+        {
+            if (recursionStack[i])
+            {
+                return true;
+            }
+
+            if (visited[i])
+            {
+                return false;
+            }
+
+            visited[i] = true;
+            recursionStack[i] = true;
+
+            var children = _graph[i];
+
+            foreach (var child in children)
+            {
+                if (IsCyclicUtil(child, visited, recursionStack))
+                {
+                    return true;
+                }
+            }
+
+            recursionStack[i] = false;
+
+            return true;
+        }
+
         private void TraverseDFS(int v, bool[] visited)
         {
             visited[v] = true;

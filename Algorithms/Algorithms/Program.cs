@@ -16,7 +16,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new FindTheRowWithMaximumNumberOfOnes();
+            DetecteCycleInDirectedGraph();
+            //new FindTheRowWithMaximumNumberOfOnes();
             //TestGraph();
             //new FindTheNumberOfIslands();
             //TestTrie();
@@ -37,6 +38,19 @@ namespace Algorithms
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySearch();
+        }
+
+        private static void DetecteCycleInDirectedGraph()
+        {
+            var graph = new Graph(true);
+                graph.AddEdge(0, 1);
+                graph.AddEdge(0, 2);
+                graph.AddEdge(1, 2);
+                graph.AddEdge(2, 0);
+                graph.AddEdge(2, 3);
+                graph.AddEdge(3, 3);
+                
+            Console.WriteLine(graph.IsCyclic());
         }
 
         private static void TestTrie()
