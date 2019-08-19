@@ -194,5 +194,62 @@ namespace Algorithms.Structure
             Console.WriteLine(v);
             stack.Push(v);
         }
+
+        public int FindMother()
+        {
+            if (!_directional)
+            {
+                return -1;
+            }
+            
+            var visited = new bool[_vertices];
+            var v = 0;
+
+            for (var i = 0; i < _vertices; i++)
+            {
+                if (visited[i] == false)
+                {
+                    FindMotherHelper(i, visited);
+                    v = i;
+                }
+            }
+            
+            for (var i = 0; i < _vertices; i++)
+            {
+                visited[i] = false;
+            }
+            
+            FindMotherHelper(v, visited);
+
+            for (var i = 0; i < _vertices; i++)
+            {
+                if (visited[i] == false)
+                {
+                    return -1;
+                }
+            }
+
+            return v;
+        }
+
+        private void FindMotherHelper(int v, bool[] visited)
+        {
+            visited[v] = true;
+
+            if (!_graph.ContainsKey(v))
+            {
+                return;
+            }
+
+            foreach (var i in _graph[v])
+            {
+                if (visited[i] == true)
+                {
+                    continue;
+                }
+                
+                FindMotherHelper(i, visited);
+            }
+        }
     }
 }
