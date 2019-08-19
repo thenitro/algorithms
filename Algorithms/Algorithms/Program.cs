@@ -16,7 +16,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            FindMotherVertexInGraph();
+            GraphIterativeDfs();
+            //FindMotherVertexInGraph();
             //DetecteCycleInDirectedGraph();
             //new FindTheRowWithMaximumNumberOfOnes();
             //TestGraph();
@@ -39,6 +40,21 @@ namespace Algorithms
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySearch();
+        }
+
+        private static void GraphIterativeDfs()
+        {
+            var graph = new Graph(true);
+            
+            graph.AddEdge(1, 0);
+            graph.AddEdge(0, 2);
+            graph.AddEdge(2, 1);
+            graph.AddEdge(0, 3);
+            graph.AddEdge(1, 4);
+            
+            var result = graph.DFS(0);
+            
+            Console.WriteLine(string.Join(",", result));
         }
 
         private static void FindMotherVertexInGraph()
@@ -198,15 +214,6 @@ namespace Algorithms
         private static void TestGraph()
         {
             var graph = new Graph(true);
-            
-            /*graph.AddEdge(0, 1);
-            graph.AddEdge(0, 2);
-            graph.AddEdge(1, 2);
-            graph.AddEdge(2, 0);
-            graph.AddEdge(2, 3);
-            graph.AddEdge(3, 3);
-            
-            graph.DFS(2);*/
             
             /*graph.AddEdge(5, 2);
             graph.AddEdge(5, 0);

@@ -54,11 +54,39 @@ namespace Algorithms.Structure
             return Empty;
         }
 
-        public void DFS(int v)
+        public List<int> DFS(int v)
         {
-            var visited = new bool[_graph.Count];
+            var result = new List<int>();
+            
+            var visited = new bool[_vertices];
+            
+            var stack = new Stack<int>();    
+                stack.Push(v);
 
-            TraverseDFS(v, visited);
+            while (stack.Count > 0)
+            {
+                v = stack.Pop();
+                visited[v] = true;
+                
+                result.Add(v);
+
+                if (!_graph.ContainsKey(v))
+                {
+                    continue;
+                }
+
+                foreach (var u in _graph[v])
+                {
+                    if (visited[u])
+                    {
+                        continue;
+                    }
+                    
+                    stack.Push(u);
+                }
+            }
+
+            return result;
         }
 
         public bool IsCyclic()
@@ -105,20 +133,6 @@ namespace Algorithms.Structure
             recursionStack[i] = false;
 
             return true;
-        }
-
-        private void TraverseDFS(int v, bool[] visited)
-        {
-            visited[v] = true;
-            Console.Write(v + " ");
-
-            foreach (var i in _graph[v])
-            {
-                if (!visited[i])
-                {
-                    TraverseDFS(i, visited);
-                }
-            }
         }
 
         public Stack<int> TopologicalSort()
@@ -251,5 +265,7 @@ namespace Algorithms.Structure
                 FindMotherHelper(i, visited);
             }
         }
+        
+        
     }
 }
