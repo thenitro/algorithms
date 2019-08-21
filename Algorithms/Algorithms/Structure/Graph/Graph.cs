@@ -265,7 +265,50 @@ namespace Algorithms.Structure
                 FindMotherHelper(i, visited);
             }
         }
-        
-        
+
+        public List<List<int>> FindAllPaths(int source, int destination)
+        {
+            if (!_directional)
+            {
+                return null;
+            }
+
+            var result = new List<List<int>>();
+            
+            var visited = new bool[_vertices];
+
+            FindAllPathsHelper(source, destination, visited, new List<int>(), result);
+
+            return result;
+        }
+
+        private void FindAllPathsHelper(
+            int u, int destination, 
+            bool[] visited, List<int> path, 
+            List<List<int>> result)
+        {
+            visited[u] = true;
+            path.Add(u);
+
+            if (u == destination)
+            {
+                result.Add(new List<int>(path));
+            }
+            else
+            {
+                foreach (var i in _graph[u])
+                {
+                    if (visited[i])
+                    {
+                        continue;
+                    }
+                    
+                    FindAllPathsHelper(i, destination, visited, path, result);
+                }
+            }
+
+            path.RemoveAt(path.Count - 1);
+            visited[u] = false;
+        }
     }
 }

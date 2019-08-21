@@ -16,7 +16,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            GraphIterativeDfs();
+            GraphFindAllPaths();
+            //GraphIterativeDfs();
             //FindMotherVertexInGraph();
             //DetecteCycleInDirectedGraph();
             //new FindTheRowWithMaximumNumberOfOnes();
@@ -40,6 +41,25 @@ namespace Algorithms
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySearch();
+        }
+
+        private static void GraphFindAllPaths()
+        {
+            var graph = new Graph(true);
+            
+            graph.AddEdge(0, 1);
+            graph.AddEdge(0, 2);
+            graph.AddEdge(0, 3);
+            graph.AddEdge(2, 0);
+            graph.AddEdge(2, 1);
+            graph.AddEdge(1, 3);
+
+            var results = graph.FindAllPaths(2, 3);
+
+            foreach (var path in results)
+            {
+                Console.WriteLine(string.Join(",", path));
+            }
         }
 
         private static void GraphIterativeDfs()
