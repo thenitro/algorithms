@@ -16,7 +16,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            GraphFindAllPaths();
+            new SteppingNumbers();
+            //GraphFindAllPaths();
             //GraphIterativeDfs();
             //FindMotherVertexInGraph();
             //DetecteCycleInDirectedGraph();

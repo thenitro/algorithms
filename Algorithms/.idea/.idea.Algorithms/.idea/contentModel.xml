@@ -37,6 +37,7 @@
           <e p="FindTheRowWithMaximumNumberOfOnes.cs" t="Include" />
           <e p="MinimumSwapsRequiredToSortAnArray.cs" t="Include" />
           <e p="MinimumSwapsToMakeToArraysIdentical.cs" t="Include" />
+          <e p="SteppingNumbers.cs" t="Include" />
         </e>
         <e p="Search" t="Include">
           <e p="BinarySearch.cs" t="Include" />
