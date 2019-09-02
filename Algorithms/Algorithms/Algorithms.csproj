@@ -57,6 +57,7 @@
     <Compile Include="RandomTasks\SteppingNumbers.cs" />
     <Compile Include="Search\BinarySearch.cs" />
     <Compile Include="Sort\Sorting.cs" />
+    <Compile Include="Structure\Graph\DisjointUnionSets.cs" />
     <Compile Include="Structure\Graph\Graph.cs" />
     <Compile Include="Structure\Queue\PriorityQueue.cs" />
     <Compile Include="Structure\Tree\AvlNode.cs" />

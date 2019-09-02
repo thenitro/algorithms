@@ -16,7 +16,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new SteppingNumbers();
+            TestDisjointSet();
+            //new SteppingNumbers();
             //GraphFindAllPaths();
             //GraphIterativeDfs();
             //FindMotherVertexInGraph();
@@ -42,6 +43,19 @@ namespace Algorithms
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySearch();
+        }
+
+        private static void TestDisjointSet()
+        {
+            var n = 5;
+            
+            var dus = new DisjointUnionSets(5);
+                dus.Union(0, 2);
+                dus.Union(4, 2);
+                dus.Union(3, 1);
+                
+            Console.WriteLine(dus.Find(4) == dus.Find(0));
+            Console.WriteLine(dus.Find(1) == dus.Find(0));
         }
 
         private static void GraphFindAllPaths()
