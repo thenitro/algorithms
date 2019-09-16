@@ -23,6 +23,7 @@
         <e p="obj" t="ExcludeRecursive" />
         <e p="Other" t="Include">
           <e p="Fibonacci.cs" t="Include" />
+          <e p="MajorityElements.cs" t="Include" />
         </e>
         <e p="Pathfinding" t="Include">
           <e p="BfsPathfinding.cs" t="Include" />

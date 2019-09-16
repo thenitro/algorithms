@@ -16,7 +16,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestDisjointSet();
+            TestBoyerMoore();
+            //TestDisjointSet();
             //new SteppingNumbers();
             //GraphFindAllPaths();
             //GraphIterativeDfs();
@@ -43,6 +44,11 @@ namespace Algorithms
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySearch();
+        }
+
+        private static void TestBoyerMoore()
+        {
+            Console.WriteLine(5 == MajorityElements.BoyerMoore(new []{ 1,3,5,5,5,5,4,1,5 }));
         }
 
         private static void TestDisjointSet()
