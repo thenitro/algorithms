@@ -16,7 +16,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestBoyerMoore();
+            new BytelandianGoldCoins();
+            //TestBoyerMoore();
             //TestDisjointSet();
             //new SteppingNumbers();
             //GraphFindAllPaths();

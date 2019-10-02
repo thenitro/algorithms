@@ -34,6 +34,7 @@
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
         <e p="RandomTasks" t="Include">
+          <e p="BytelandianGoldCOins.cs" t="Include" />
           <e p="FindTheNumberOfIslands.cs" t="Include" />
           <e p="FindTheRowWithMaximumNumberOfOnes.cs" t="Include" />
           <e p="MinimumSwapsRequiredToSortAnArray.cs" t="Include" />

@@ -51,6 +51,7 @@
     <Compile Include="Pathfinding\GraphsPathfinding.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomTasks\BytelandianGoldCoins.cs" />
     <Compile Include="RandomTasks\FindTheNumberOfIslands.cs" />
     <Compile Include="RandomTasks\FindTheRowWithMaximumNumberOfOnes.cs" />
     <Compile Include="RandomTasks\MinimumSwapsRequiredToSortAnArray.cs" />
