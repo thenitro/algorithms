@@ -54,6 +54,7 @@
     <Compile Include="RandomTasks\BytelandianGoldCoins.cs" />
     <Compile Include="RandomTasks\FindTheNumberOfIslands.cs" />
     <Compile Include="RandomTasks\FindTheRowWithMaximumNumberOfOnes.cs" />
+    <Compile Include="RandomTasks\MinCostPath.cs" />
     <Compile Include="RandomTasks\MinimumSwapsRequiredToSortAnArray.cs" />
     <Compile Include="RandomTasks\MinimumSwapsToMakeToArraysIdentical.cs" />
     <Compile Include="RandomTasks\SteppingNumbers.cs" />

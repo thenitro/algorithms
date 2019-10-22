@@ -37,6 +37,7 @@
           <e p="BytelandianGoldCOins.cs" t="Include" />
           <e p="FindTheNumberOfIslands.cs" t="Include" />
           <e p="FindTheRowWithMaximumNumberOfOnes.cs" t="Include" />
+          <e p="MinCostPath.cs" t="Include" />
           <e p="MinimumSwapsRequiredToSortAnArray.cs" t="Include" />
           <e p="MinimumSwapsToMakeToArraysIdentical.cs" t="Include" />
           <e p="SteppingNumbers.cs" t="Include" />
