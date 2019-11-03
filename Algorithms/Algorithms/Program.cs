@@ -16,7 +16,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new MinCostPath();
+            new MinimumWindow();
+            //new MinCostPath();
             //new BytelandianGoldCoins();
             //TestBoyerMoore();
             //TestDisjointSet();
