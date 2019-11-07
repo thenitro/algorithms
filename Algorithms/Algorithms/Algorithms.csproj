@@ -45,6 +45,7 @@
     <Compile Include="Concurency\Examples\SemaphoreExample.cs" />
     <Compile Include="Concurency\Examples\TimeoutMutexExample.cs" />
     <Compile Include="Median\Median.cs" />
+    <Compile Include="Other\Factorial.cs" />
     <Compile Include="Other\Fibonacci.cs" />
     <Compile Include="Other\MajorityElements.cs" />
     <Compile Include="Pathfinding\BfsPathfinding.cs" />

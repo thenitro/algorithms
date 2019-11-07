@@ -16,7 +16,9 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new MinimumWindow();
+            TestFactorial();
+            //new MinimumWindow();
+            //new MinCostPath();
             //new MinCostPath();
             //new BytelandianGoldCoins();
             //TestBoyerMoore();
@@ -47,6 +49,19 @@ namespace Algorithms
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySearch();
+        }
+
+        private static void TestFactorial()
+        {
+            Console.WriteLine(1 == Factorial.CalculateRecursive(0));
+            Console.WriteLine(1 == Factorial.CalculateRecursive(1));
+            Console.WriteLine(2 == Factorial.CalculateRecursive(2));
+            Console.WriteLine(6 == Factorial.CalculateRecursive(3));
+            
+            Console.WriteLine(1 == Factorial.Calculate(0));
+            Console.WriteLine(1 == Factorial.Calculate(1));
+            Console.WriteLine(2 == Factorial.Calculate(2));
+            Console.WriteLine(6 == Factorial.Calculate(3));
         }
 
         private static void TestBoyerMoore()
