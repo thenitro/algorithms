@@ -47,6 +47,7 @@
     <Compile Include="DynamicProgramming\Factorial.cs" />
     <Compile Include="DynamicProgramming\Fibonacci.cs" />
     <Compile Include="DynamicProgramming\NumberOfWaysToFormN.cs" />
+    <Compile Include="DynamicProgramming\UglyNumbers.cs" />
     <Compile Include="Median\Median.cs" />
     <Compile Include="Other\MajorityElements.cs" />
     <Compile Include="Pathfinding\BfsPathfinding.cs" />
