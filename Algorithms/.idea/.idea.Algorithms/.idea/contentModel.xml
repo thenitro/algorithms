@@ -17,13 +17,16 @@
             <e p="TimeoutMutexExample.cs" t="Include" />
           </e>
         </e>
+        <e p="DynamicProgramming" t="Include">
+          <e p="Factorial.cs" t="Include" />
+          <e p="Fibonacci.cs" t="Include" />
+          <e p="NumberOfWaysToFormN.cs" t="Include" />
+        </e>
         <e p="Median" t="Include">
           <e p="Median.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="Other" t="Include">
-          <e p="Factorial.cs" t="Include" />
-          <e p="Fibonacci.cs" t="Include" />
           <e p="MajorityElements.cs" t="Include" />
         </e>
         <e p="Pathfinding" t="Include">

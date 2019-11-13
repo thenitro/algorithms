@@ -16,7 +16,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestFactorial();
+            new NumberOfWaysToFormN();
+            //TestFactorial();
             //new MinimumWindow();
             //new MinCostPath();
             //new MinCostPath();
