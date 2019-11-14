@@ -3,12 +3,13 @@ using System.Linq;
 using Algorithms.Concurency.Examples;
 using Algorithms.Other;
 using Algorithms.Pathfinding;
-using Algorithms.RandomTests;
 using Algorithms.Search;
 using Algorithms.Sort;
 using Algorithms.Structure;
+using Algorithms.Structure.QuadTree;
 using Algorithms.Structure.Queue;
 using Algorithms.Structure.Tree;
+using Node = Algorithms.Structure.QuadTree.Node;
 
 namespace Algorithms
 {
@@ -16,7 +17,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new UglyNumbers();
+            TestQuadTree();
+            //new UglyNumbers();
             //new NumberOfWaysToFormN();
             //TestFactorial();
             //new MinimumWindow();
@@ -51,6 +53,24 @@ namespace Algorithms
             //TestFibonacci();
             //TestBinarySearchTree();
             //TestBinarySearch();
+        }
+
+        private static void TestQuadTree()
+        {
+            var center = new Quad(new Point(0, 0), new Point(8, 8));
+            
+            var a = new Node(new Point(1, 1), 1);
+            var b = new Node(new Point(2, 5), 2);
+            var c = new Node(new Point(7, 6), 3);
+            
+            center.Insert(a);
+            center.Insert(b);
+            center.Insert(c);
+
+            Console.WriteLine("Node a "  + center.Search(new Point(1, 1)).Data);
+            Console.WriteLine("Node b "  + center.Search(new Point(2, 5)).Data);
+            Console.WriteLine("Node c "  + center.Search(new Point(7, 6)).Data);
+            Console.WriteLine("Node None "  + center.Search(new Point(5, 5)));
         }
 
         private static void TestFactorial()

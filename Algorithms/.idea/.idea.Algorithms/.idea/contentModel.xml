@@ -59,6 +59,11 @@
             <e p="DisjointUnionSets.cs" t="Include" />
             <e p="Graph.cs" t="Include" />
           </e>
+          <e p="QuadTree" t="Include">
+            <e p="Node.cs" t="Include" />
+            <e p="Point.cs" t="Include" />
+            <e p="Quad.cs" t="Include" />
+          </e>
           <e p="Queue" t="Include">
             <e p="PriorityQueue.cs" t="Include" />
           </e>
