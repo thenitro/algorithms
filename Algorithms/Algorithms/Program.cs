@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using Algorithms.Concurency.Examples;
 using Algorithms.Other;
 using Algorithms.Pathfinding;
 using Algorithms.Search;
 using Algorithms.Sort;
 using Algorithms.Structure;
+using Algorithms.Structure.Heap;
 using Algorithms.Structure.QuadTree;
 using Algorithms.Structure.Queue;
 using Algorithms.Structure.Tree;
@@ -17,7 +19,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestBinarySearchTree();
+            TestHeap();
+            //TestBinarySearchTree();
             //TestQuadTree();
             //new UglyNumbers();
             //new NumberOfWaysToFormN();
@@ -55,6 +58,32 @@ namespace Algorithms
             //TestBinarySearch();
         }
 
+        private static void TestHeap()
+        {
+            var heap = new MinHeap(11);
+
+            heap.Push(3);
+            heap.Push(2);
+            
+            Console.WriteLine(heap.Peek());
+            
+            heap.Delete(1);
+            
+            Console.WriteLine(heap.Peek());
+
+            heap.Push(15);
+            heap.Push(5);
+            heap.Push(4);
+            heap.Push(45);
+
+            Console.WriteLine(heap.Pop());
+            Console.WriteLine(heap.Peek());
+
+            heap.Decrease(2, 1);
+
+            Console.WriteLine(heap.Peek());
+        }
+        
         private static void TestQuadTree()
         {
             var center = new Quad(new Point(0, 0), new Point(8, 8));

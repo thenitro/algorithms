@@ -59,6 +59,9 @@
             <e p="DisjointUnionSets.cs" t="Include" />
             <e p="Graph.cs" t="Include" />
           </e>
+          <e p="Heap" t="Include">
+            <e p="MinHeap.cs" t="Include" />
+          </e>
           <e p="QuadTree" t="Include">
             <e p="Node.cs" t="Include" />
             <e p="Point.cs" t="Include" />

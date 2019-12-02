@@ -66,6 +66,7 @@
     <Compile Include="Sort\Sorting.cs" />
     <Compile Include="Structure\Graph\DisjointUnionSets.cs" />
     <Compile Include="Structure\Graph\Graph.cs" />
+    <Compile Include="Structure\Heap\MinHeap.cs" />
     <Compile Include="Structure\QuadTree\Node.cs" />
     <Compile Include="Structure\QuadTree\Point.cs" />
     <Compile Include="Structure\QuadTree\Quad.cs" />
