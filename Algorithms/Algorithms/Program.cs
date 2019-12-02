@@ -17,7 +17,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestQuadTree();
+            TestBinarySearchTree();
+            //TestQuadTree();
             //new UglyNumbers();
             //new NumberOfWaysToFormN();
             //TestFactorial();
@@ -51,7 +52,6 @@ namespace Algorithms
             //TestPriorityQueue();
             //TestLock();
             //TestFibonacci();
-            //TestBinarySearchTree();
             //TestBinarySearch();
         }
 
@@ -429,6 +429,7 @@ namespace Algorithms
             tree.Insert(120);
             
             tree.Print();
+            tree.PrintInorder();
             
             Console.WriteLine(tree.Has(80));
             Console.WriteLine(tree.Has(121));
@@ -438,6 +439,7 @@ namespace Algorithms
             Console.WriteLine(tree.Has(100));
             
             tree.Print();
+            tree.PrintInorder();
             
             tree.TraverseNode(tree.Head, node => { Console.Write(node.Value + ", ");});
         }

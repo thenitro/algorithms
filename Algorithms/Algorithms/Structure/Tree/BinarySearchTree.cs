@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Algorithms.Structure.Tree
 {
@@ -28,6 +29,29 @@ namespace Algorithms.Structure.Tree
             tabs++;
             
             return prefix + "V: " + node.Value + "" + PrintNode(node.Left, tabs) + "" + PrintNode(node.Right, tabs);
+        }
+
+        public void PrintInorder()
+        {
+            var result = string.Empty;
+            var stack = new Stack<BinaryTreeNode>();
+            var current = Head;
+                
+            while (current != null || stack.Count != 0)
+            {
+                while (current != null)
+                {
+                    stack.Push(current);
+                    current = current.Left;
+                }
+
+                current = stack.Pop();
+                
+                result += " " + current.Value;
+                current = current.Right;
+            }
+
+            Console.WriteLine("Inorder: " + result);
         }
         
         public void Insert(int value)
