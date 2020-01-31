@@ -40,6 +40,7 @@
         </e>
         <e p="RandomTasks" t="Include">
           <e p="BytelandianGoldCOins.cs" t="Include" />
+          <e p="FindNumberWithoutDuplicate.cs" t="Include" />
           <e p="FindTheNumberOfIslands.cs" t="Include" />
           <e p="FindTheRowWithMaximumNumberOfOnes.cs" t="Include" />
           <e p="MinCostPath.cs" t="Include" />

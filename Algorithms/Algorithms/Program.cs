@@ -4,6 +4,7 @@ using System.Runtime.Remoting.Messaging;
 using Algorithms.Concurency.Examples;
 using Algorithms.Other;
 using Algorithms.Pathfinding;
+using Algorithms.RandomTests;
 using Algorithms.Search;
 using Algorithms.Sort;
 using Algorithms.Structure;
@@ -19,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestHeap();
+            new FindNumberWithoutDuplicate();
+            //TestHeap();
             //TestBinarySearchTree();
             //TestQuadTree();
             //new UglyNumbers();
