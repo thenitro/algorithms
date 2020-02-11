@@ -55,6 +55,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomTasks\BytelandianGoldCoins.cs" />
+    <Compile Include="RandomTasks\CoinChange.cs" />
     <Compile Include="RandomTasks\FindNumberWithoutDuplicate.cs" />
     <Compile Include="RandomTasks\FindTheNumberOfIslands.cs" />
     <Compile Include="RandomTasks\FindTheRowWithMaximumNumberOfOnes.cs" />
