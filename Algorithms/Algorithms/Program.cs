@@ -20,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new CoinChange();
+            new EditDistance();
+            //new CoinChange();
             //new FindNumberWithoutDuplicate();
             //TestHeap();
             //TestBinarySearchTree();
