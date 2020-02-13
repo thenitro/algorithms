@@ -60,6 +60,7 @@
     <Compile Include="RandomTasks\FindNumberWithoutDuplicate.cs" />
     <Compile Include="RandomTasks\FindTheNumberOfIslands.cs" />
     <Compile Include="RandomTasks\FindTheRowWithMaximumNumberOfOnes.cs" />
+    <Compile Include="RandomTasks\KnapsackProblem.cs" />
     <Compile Include="RandomTasks\MinCostPath.cs" />
     <Compile Include="RandomTasks\MinimumSwapsRequiredToSortAnArray.cs" />
     <Compile Include="RandomTasks\MinimumSwapsToMakeToArraysIdentical.cs" />

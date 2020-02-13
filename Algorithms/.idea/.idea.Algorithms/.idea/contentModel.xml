@@ -45,6 +45,7 @@
           <e p="FindNumberWithoutDuplicate.cs" t="Include" />
           <e p="FindTheNumberOfIslands.cs" t="Include" />
           <e p="FindTheRowWithMaximumNumberOfOnes.cs" t="Include" />
+          <e p="KnapsackProblem.cs" t="Include" />
           <e p="MinCostPath.cs" t="Include" />
           <e p="MinimumSwapsRequiredToSortAnArray.cs" t="Include" />
           <e p="MinimumSwapsToMakeToArraysIdentical.cs" t="Include" />
