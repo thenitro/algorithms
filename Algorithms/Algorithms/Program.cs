@@ -20,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new KnapsackProblem();
+            new FloydWarshallAlgorithm();
+            //new KnapsackProblem();
             //new EditDistance();
             //new CoinChange();
             //new FindNumberWithoutDuplicate();
