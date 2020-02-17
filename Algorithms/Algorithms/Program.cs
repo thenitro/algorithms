@@ -12,7 +12,6 @@ using Algorithms.Structure.Heap;
 using Algorithms.Structure.QuadTree;
 using Algorithms.Structure.Queue;
 using Algorithms.Structure.Tree;
-using Algorithms.Structure.UnionFind;
 using Node = Algorithms.Structure.QuadTree.Node;
 
 namespace Algorithms
@@ -21,7 +20,7 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestQuickFindUf();
+            new SubsetSumProblem();
             //new FloydWarshallAlgorithm();
             //new KnapsackProblem();
             //new EditDistance();
@@ -64,26 +63,6 @@ namespace Algorithms
             //TestLock();
             //TestFibonacci();
             //TestBinarySearch();
-        }
-
-        private static void TestQuickFindUf()
-        {
-            var uf = new QuickFind(10);
-            
-            uf.Union(1,2);
-            uf.Union(2,3);
-            uf.Union(3,4);
-            uf.Union(4,5);
-            
-            uf.Union(6,7);
-            uf.Union(7, 8);
-            uf.Union(8, 9);
-            uf.Union(9, 0);
-
-            Console.WriteLine(false == uf.Connected(0, 1));
-            Console.WriteLine(true == uf.Connected(1, 5));
-            Console.WriteLine(false == uf.Connected(9, 5));
-            Console.WriteLine(true == uf.Connected(6, 0));
         }
 
         private static void TestHeap()

@@ -66,6 +66,7 @@
     <Compile Include="RandomTasks\MinimumSwapsToMakeToArraysIdentical.cs" />
     <Compile Include="RandomTasks\MinimumWindow.cs" />
     <Compile Include="RandomTasks\SteppingNumbers.cs" />
+    <Compile Include="RandomTasks\SubsetSumProblem.cs" />
     <Compile Include="Search\BinarySearch.cs" />
     <Compile Include="Sort\Sorting.cs" />
     <Compile Include="Structure\Graph\DisjointUnionSets.cs" />

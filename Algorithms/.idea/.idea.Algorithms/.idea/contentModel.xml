@@ -51,6 +51,7 @@
           <e p="MinimumSwapsToMakeToArraysIdentical.cs" t="Include" />
           <e p="MinimumWindow.cs" t="Include" />
           <e p="SteppingNumbers.cs" t="Include" />
+          <e p="SubsetSumProblem.cs" t="Include" />
         </e>
         <e p="Search" t="Include">
           <e p="BinarySearch.cs" t="Include" />
