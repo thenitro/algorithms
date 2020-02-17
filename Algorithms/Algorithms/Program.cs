@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
 using Algorithms.Concurency.Examples;
+using Algorithms.DynamicProgramming;
 using Algorithms.Other;
 using Algorithms.Pathfinding;
 using Algorithms.RandomTests;
@@ -20,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new SubsetSumProblem();
+            new UniqueBinarySearchTrees();
+            //new SubsetSumProblem();
             //new FloydWarshallAlgorithm();
             //new KnapsackProblem();
             //new EditDistance();

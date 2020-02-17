@@ -7,7 +7,8 @@ namespace Algorithms.Other
         public UglyNumbers()
         {
             Console.WriteLine(5832 == SolveStraightforward(150));
-            Console.WriteLine(5832 == SolveTabulate(150));
+            //Console.WriteLine(5832 == SolveTabulate(150));
+            Console.WriteLine(5832 == SolveTabulate(10));
         }
 
         private int SolveStraightforward(int n)
