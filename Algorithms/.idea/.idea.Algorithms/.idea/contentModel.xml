@@ -18,6 +18,7 @@
           </e>
         </e>
         <e p="DynamicProgramming" t="Include">
+          <e p="BellNumbers.cs" t="Include" />
           <e p="BytelandianGoldCOins.cs" t="Include" />
           <e p="CoinChange.cs" t="Include" />
           <e p="EditDistance.cs" t="Include" />

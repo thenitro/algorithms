@@ -20,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new UniqueBinarySearchTrees();
+            new BellNumbers();
+            //new UniqueBinarySearchTrees();
             //new SubsetSumProblem();
             //new FloydWarshallAlgorithm();
             //new KnapsackProblem();
