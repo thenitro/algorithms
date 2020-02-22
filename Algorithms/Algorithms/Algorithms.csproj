@@ -51,6 +51,7 @@
     <Compile Include="DynamicProgramming\Factorial.cs" />
     <Compile Include="DynamicProgramming\Fibonacci.cs" />
     <Compile Include="DynamicProgramming\KnapsackProblem.cs" />
+    <Compile Include="DynamicProgramming\LongestCommonSubsequence.cs" />
     <Compile Include="DynamicProgramming\UniqueBinarySearchTrees.cs" />
     <Compile Include="DynamicProgramming\NumberOfWaysToFormN.cs" />
     <Compile Include="DynamicProgramming\SubsetSumProblem.cs" />
