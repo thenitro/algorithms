@@ -26,6 +26,7 @@
           <e p="Fibonacci.cs" t="Include" />
           <e p="KnapsackProblem.cs" t="Include" />
           <e p="LongestCommonSubsequence.cs" t="Include" />
+          <e p="LongestIncreasingSubsequence.cs" t="Include" />
           <e p="NumberOfWaysToFormN.cs" t="Include" />
           <e p="SubsetSumProblem.cs" t="Include" />
           <e p="UglyNumbers.cs" t="Include" />
