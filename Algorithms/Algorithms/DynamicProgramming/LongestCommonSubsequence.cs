@@ -16,7 +16,7 @@ namespace Algorithms.DynamicProgramming
 
             for (var i = 1; i <= s1.Length; i++)
             {
-                for (var j = 1; j <= s2.Length; j++)
+                for (var j = 1; j <= i; j++)
                 {
                     if (s1[i - 1] == s2[j - 1])
                     {

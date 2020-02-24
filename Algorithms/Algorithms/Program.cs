@@ -20,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new LongestCommonSubsequence();
+            new LongestIncreasingSubsequence();
+            //new LongestCommonSubsequence();
             //new BellNumbers();
             //new UniqueBinarySearchTrees();
             //new SubsetSumProblem();

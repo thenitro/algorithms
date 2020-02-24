@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\thenitro\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\thenitro\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Algorithms.-305391746.00" t="ExcludeRecursive" />
-    <e p="D:\Algorithms\Algorithms" t="IncludeFlat">
+    <e p="C:\Users\TimurKoshel\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\TimurKoshel\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Algorithms.-238696282.00" t="ExcludeRecursive" />
+    <e p="E:\code\Algorithms\Algorithms" t="IncludeFlat">
       <e p="Algorithms" t="IncludeRecursive">
         <e p="Algorithms.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />

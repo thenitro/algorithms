@@ -1,4 +1,5 @@
 using System;
+using System.Security.Principal;
 
 namespace Algorithms.DynamicProgramming
 {
@@ -16,16 +17,24 @@ namespace Algorithms.DynamicProgramming
             var N = array.Length;
             var dp = new int[N];
 
-            for (int i = 1; i < N; i++)
+            for (var i = 0; i < N; i++)
             {
-                if (array[i - 1] < array[i])
+                dp[i] = 1;
+            }
+
+            var max = 1;
+
+            for (int i = 0; i < N; i++)
+            {
+                for (var j = 0; j < i; j++)
                 {
-                    dp[i] = dp[i - 1] + 1;
+                    if (array[i] > array[j])
+                    {
+                        dp[i] = Math.Max(dp[i], dp[j] + 1);
+                    }
                 }
-                else
-                {
-                    dp[i] = dp[i - 1];
-                }
+
+                max = Math.Max(max, dp[i]);
             }
 
             return dp[N - 1];
