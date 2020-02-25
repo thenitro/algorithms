@@ -28,6 +28,7 @@
           <e p="LongestCommonSubsequence.cs" t="Include" />
           <e p="LongestIncreasingSubsequence.cs" t="Include" />
           <e p="NumberOfWaysToFormN.cs" t="Include" />
+          <e p="PartitionSetIntoTwoSubsets.cs" t="Include" />
           <e p="SubsetSumProblem.cs" t="Include" />
           <e p="UglyNumbers.cs" t="Include" />
           <e p="UniqueBinarySearchTrees.cs" t="Include" />

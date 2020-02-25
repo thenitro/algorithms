@@ -53,6 +53,7 @@
     <Compile Include="DynamicProgramming\KnapsackProblem.cs" />
     <Compile Include="DynamicProgramming\LongestCommonSubsequence.cs" />
     <Compile Include="DynamicProgramming\LongestIncreasingSubsequence.cs" />
+    <Compile Include="DynamicProgramming\PartitionSetIntoTwoSubsets.cs" />
     <Compile Include="DynamicProgramming\UniqueBinarySearchTrees.cs" />
     <Compile Include="DynamicProgramming\NumberOfWaysToFormN.cs" />
     <Compile Include="DynamicProgramming\SubsetSumProblem.cs" />
