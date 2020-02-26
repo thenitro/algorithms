@@ -21,6 +21,7 @@
           <e p="BellNumbers.cs" t="Include" />
           <e p="BytelandianGoldCOins.cs" t="Include" />
           <e p="CoinChange.cs" t="Include" />
+          <e p="CountNumberOfWaysToCoverDistance.cs" t="Include" />
           <e p="EditDistance.cs" t="Include" />
           <e p="Factorial.cs" t="Include" />
           <e p="Fibonacci.cs" t="Include" />

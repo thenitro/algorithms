@@ -47,6 +47,7 @@
     <Compile Include="DynamicProgramming\BellNumbers.cs" />
     <Compile Include="DynamicProgramming\BytelandianGoldCoins.cs" />
     <Compile Include="DynamicProgramming\CoinChange.cs" />
+    <Compile Include="DynamicProgramming\CountNumberOfWaysToCoverDistance.cs" />
     <Compile Include="DynamicProgramming\EditDistance.cs" />
     <Compile Include="DynamicProgramming\Factorial.cs" />
     <Compile Include="DynamicProgramming\Fibonacci.cs" />

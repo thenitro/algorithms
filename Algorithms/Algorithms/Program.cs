@@ -20,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new PartitionSetIntoTwoSubsets();
+            new CountNumberOfWaysToCoverDistance();
+            //new PartitionSetIntoTwoSubsets();
             //new LongestIncreasingSubsequence();
             //new LongestCommonSubsequence();
             //new BellNumbers();
