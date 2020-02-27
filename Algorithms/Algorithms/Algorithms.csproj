@@ -51,6 +51,7 @@
     <Compile Include="DynamicProgramming\EditDistance.cs" />
     <Compile Include="DynamicProgramming\Factorial.cs" />
     <Compile Include="DynamicProgramming\Fibonacci.cs" />
+    <Compile Include="DynamicProgramming\FindTheLongestPathInMatrixWithGivenConstraints.cs" />
     <Compile Include="DynamicProgramming\KnapsackProblem.cs" />
     <Compile Include="DynamicProgramming\LongestCommonSubsequence.cs" />
     <Compile Include="DynamicProgramming\LongestIncreasingSubsequence.cs" />

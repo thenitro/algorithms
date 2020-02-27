@@ -25,6 +25,7 @@
           <e p="EditDistance.cs" t="Include" />
           <e p="Factorial.cs" t="Include" />
           <e p="Fibonacci.cs" t="Include" />
+          <e p="FindTheLongestPathInMatrixWithGivenConstraints.cs" t="Include" />
           <e p="KnapsackProblem.cs" t="Include" />
           <e p="LongestCommonSubsequence.cs" t="Include" />
           <e p="LongestIncreasingSubsequence.cs" t="Include" />
