@@ -20,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new FindTheLongestPathInMatrixWithGivenConstraints();
+            new OptimalStrategyForAGame();
+            //new FindTheLongestPathInMatrixWithGivenConstraints();
             //new CountNumberOfWaysToCoverDistance();
             //new PartitionSetIntoTwoSubsets();
             //new LongestIncreasingSubsequence();
