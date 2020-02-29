@@ -45,6 +45,7 @@
     <Compile Include="Concurency\Examples\SemaphoreExample.cs" />
     <Compile Include="Concurency\Examples\TimeoutMutexExample.cs" />
     <Compile Include="DynamicProgramming\BellNumbers.cs" />
+    <Compile Include="DynamicProgramming\BooleanParenthesizationProblem.cs" />
     <Compile Include="DynamicProgramming\BytelandianGoldCoins.cs" />
     <Compile Include="DynamicProgramming\CoinChange.cs" />
     <Compile Include="DynamicProgramming\CountNumberOfWaysToCoverDistance.cs" />

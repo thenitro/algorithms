@@ -20,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new OptimalStrategyForAGame();
+            new BooleanParenthesizationProblem();
+            //new OptimalStrategyForAGame();
             //new FindTheLongestPathInMatrixWithGivenConstraints();
             //new CountNumberOfWaysToCoverDistance();
             //new PartitionSetIntoTwoSubsets();
