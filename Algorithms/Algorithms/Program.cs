@@ -20,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new BooleanParenthesizationProblem();
+            TestSelectionSort();
+            //new BooleanParenthesizationProblem();
             //new OptimalStrategyForAGame();
             //new FindTheLongestPathInMatrixWithGivenConstraints();
             //new CountNumberOfWaysToCoverDistance();
@@ -72,6 +73,15 @@ namespace Algorithms
             //TestLock();
             //TestFibonacci();
             //TestBinarySearch();
+        }
+
+        private static void TestSelectionSort()
+        {
+            var array = new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1};
+            
+            SelectionSort.Sort(array);
+
+            Console.WriteLine(string.Join(", ", array));
         }
 
         private static void TestHeap()
