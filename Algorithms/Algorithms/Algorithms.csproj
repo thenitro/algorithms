@@ -80,6 +80,7 @@
     <Compile Include="Search\BinarySearch.cs" />
     <Compile Include="Sort\InsertionSort.cs" />
     <Compile Include="Sort\SelectionSort.cs" />
+    <Compile Include="Sort\ShellSort.cs" />
     <Compile Include="Sort\Sorting.cs" />
     <Compile Include="Structure\Graph\DisjointUnionSets.cs" />
     <Compile Include="Structure\Graph\FloydWarshallAlgorithm.cs" />
