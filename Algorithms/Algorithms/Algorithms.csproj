@@ -58,6 +58,7 @@
     <Compile Include="DynamicProgramming\LongestIncreasingSubsequence.cs" />
     <Compile Include="DynamicProgramming\OptimalStrategyForAGame.cs" />
     <Compile Include="DynamicProgramming\PartitionSetIntoTwoSubsets.cs" />
+    <Compile Include="DynamicProgramming\ShortestCommonSupersequence.cs" />
     <Compile Include="DynamicProgramming\UniqueBinarySearchTrees.cs" />
     <Compile Include="DynamicProgramming\NumberOfWaysToFormN.cs" />
     <Compile Include="DynamicProgramming\SubsetSumProblem.cs" />

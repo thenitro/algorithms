@@ -20,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestSelectionSort();
+            new ShortestCommonSupersequence();
+            //TestSelectionSort();
             //new BooleanParenthesizationProblem();
             //new OptimalStrategyForAGame();
             //new FindTheLongestPathInMatrixWithGivenConstraints();
