@@ -78,6 +78,7 @@
     <Compile Include="RandomTasks\MinimumWindow.cs" />
     <Compile Include="RandomTasks\SteppingNumbers.cs" />
     <Compile Include="Search\BinarySearch.cs" />
+    <Compile Include="Sort\InsertionSort.cs" />
     <Compile Include="Sort\SelectionSort.cs" />
     <Compile Include="Sort\Sorting.cs" />
     <Compile Include="Structure\Graph\DisjointUnionSets.cs" />

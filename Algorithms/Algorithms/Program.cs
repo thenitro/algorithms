@@ -20,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new ShortestCommonSupersequence();
+            TestInsertionSort();
+            //new ShortestCommonSupersequence();
             //TestSelectionSort();
             //new BooleanParenthesizationProblem();
             //new OptimalStrategyForAGame();
@@ -76,6 +77,15 @@ namespace Algorithms
             //TestBinarySearch();
         }
 
+        private static void TestInsertionSort()
+        {
+            var array = new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1};
+            
+            InsertionSort.Sort(array);
+
+            Console.WriteLine(string.Join(", ", array));
+        }
+        
         private static void TestSelectionSort()
         {
             var array = new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1};

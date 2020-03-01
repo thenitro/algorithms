@@ -67,6 +67,7 @@
           <e p="BinarySearch.cs" t="Include" />
         </e>
         <e p="Sort" t="Include">
+          <e p="InsertionSort.cs" t="Include" />
           <e p="SelectionSort.cs" t="Include" />
           <e p="Sorting.cs" t="Include" />
         </e>
