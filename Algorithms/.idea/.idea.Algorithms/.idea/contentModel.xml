@@ -44,6 +44,7 @@
         </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="Other" t="Include">
+          <e p="ConvexHull.cs" t="Include" />
           <e p="MajorityElements.cs" t="Include" />
         </e>
         <e p="Pathfinding" t="Include">
@@ -68,10 +69,12 @@
           <e p="BinarySearch.cs" t="Include" />
         </e>
         <e p="Sort" t="Include">
+          <e p="BinarySort.cs" t="Include" />
           <e p="InsertionSort.cs" t="Include" />
+          <e p="QuickSort.cs" t="Include" />
           <e p="SelectionSort.cs" t="Include" />
           <e p="Shellsort.cs" t="Include" />
-          <e p="Sorting.cs" t="Include" />
+          <e p="ShuffleSort.cs" t="Include" />
         </e>
         <e p="Structure" t="Include">
           <e p="Graph" t="Include">
@@ -82,9 +85,9 @@
           <e p="Heap" t="Include">
             <e p="MinHeap.cs" t="Include" />
           </e>
+          <e p="Point.cs" t="Include" />
           <e p="QuadTree" t="Include">
             <e p="Node.cs" t="Include" />
-            <e p="Point.cs" t="Include" />
             <e p="Quad.cs" t="Include" />
           </e>
           <e p="Queue" t="Include">

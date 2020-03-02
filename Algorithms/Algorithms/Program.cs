@@ -13,6 +13,7 @@ using Algorithms.Structure.QuadTree;
 using Algorithms.Structure.Queue;
 using Algorithms.Structure.Tree;
 using Node = Algorithms.Structure.QuadTree.Node;
+using Point = Algorithms.Structure.Point;
 
 namespace Algorithms
 {
@@ -20,7 +21,9 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new MatrixChainMultiplication();
+            TestConvexHull();
+            //TestShuffleSort();
+            //new MatrixChainMultiplication();
             //TestShellSort();
             //TestInsertionSort();
             //new ShortestCommonSupersequence();
@@ -77,6 +80,39 @@ namespace Algorithms
             //TestLock();
             //TestFibonacci();
             //TestBinarySearch();
+        }
+
+        private static void TestConvexHull()
+        {
+            var points = new Point[]
+            {
+                new Point(100, 100, "A"), 
+                new Point(100, 10, "B"), 
+                new Point(90, 15, "C"), 
+                new Point(80, 5, "D"), 
+                new Point(70, 25, "E"), 
+                new Point(40, 50, "G"), 
+                new Point(25, 7, "F"), 
+                new Point(20, 80, "H"), 
+                new Point(5, 30, "I"), 
+                new Point(5, 95, "J"), 
+            };
+
+            var result = ConvexHull.Find(points);
+
+            foreach (var point in result)
+            {
+                Console.WriteLine(point);
+            }
+        }
+
+        private static void TestShuffleSort()
+        {
+            var array = new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1};
+            
+            ShuffleSort.Sort(array);
+
+            Console.WriteLine(string.Join(", ", array));
         }
 
         private static void TestShellSort()
@@ -525,7 +561,7 @@ namespace Algorithms
         {
             var arr = new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1};
 
-            Sorting.BinarySort(arr);
+            BinarySort.Sort(arr);
             
             for (var i = 0; i < arr.Length; i++)
             {
@@ -535,7 +571,7 @@ namespace Algorithms
             
             arr = new int[] {3, 2, 1, 9, 8, 7, 6, 5, 4 };
 
-            Sorting.QuickSort(arr);
+            QuickSort.Sort(arr);
             
             for (var i = 0; i < arr.Length; i++)
             {
