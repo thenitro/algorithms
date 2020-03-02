@@ -56,6 +56,7 @@
     <Compile Include="DynamicProgramming\KnapsackProblem.cs" />
     <Compile Include="DynamicProgramming\LongestCommonSubsequence.cs" />
     <Compile Include="DynamicProgramming\LongestIncreasingSubsequence.cs" />
+    <Compile Include="DynamicProgramming\MatrixChainMultiplication.cs" />
     <Compile Include="DynamicProgramming\OptimalStrategyForAGame.cs" />
     <Compile Include="DynamicProgramming\PartitionSetIntoTwoSubsets.cs" />
     <Compile Include="DynamicProgramming\ShortestCommonSupersequence.cs" />

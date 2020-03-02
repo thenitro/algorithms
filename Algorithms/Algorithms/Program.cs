@@ -20,7 +20,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestShellSort();
+            new MatrixChainMultiplication();
+            //TestShellSort();
             //TestInsertionSort();
             //new ShortestCommonSupersequence();
             //TestSelectionSort();
