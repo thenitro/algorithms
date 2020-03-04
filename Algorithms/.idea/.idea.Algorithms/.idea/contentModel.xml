@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\thenitro\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\thenitro\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Algorithms.-305391746.00" t="ExcludeRecursive" />
+    <e p="C:\Users\timur\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\timur\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Algorithms.-305391746.00" t="ExcludeRecursive" />
     <e p="D:\Algorithms\Algorithms" t="IncludeFlat">
       <e p="Algorithms" t="IncludeRecursive">
         <e p="Algorithms.csproj" t="IncludeRecursive" />
@@ -20,7 +20,7 @@
         <e p="DynamicProgramming" t="Include">
           <e p="BellNumbers.cs" t="Include" />
           <e p="BooleanParenthesizationProblem.cs" t="Include" />
-          <e p="BytelandianGoldCOins.cs" t="Include" />
+          <e p="BytelandianGoldCoins.cs" t="Include" />
           <e p="CoinChange.cs" t="Include" />
           <e p="CountNumberOfWaysToCoverDistance.cs" t="Include" />
           <e p="EditDistance.cs" t="Include" />
@@ -33,6 +33,7 @@
           <e p="MatrixChainMultiplication.cs" t="Include" />
           <e p="NumberOfWaysToFormN.cs" t="Include" />
           <e p="OptimalStrategyForAGame.cs" t="Include" />
+          <e p="PartitionProblem.cs" t="Include" />
           <e p="PartitionSetIntoTwoSubsets.cs" t="Include" />
           <e p="ShortestCommonSupersequence.cs" t="Include" />
           <e p="SubsetSumProblem.cs" t="Include" />
@@ -73,7 +74,7 @@
           <e p="InsertionSort.cs" t="Include" />
           <e p="QuickSort.cs" t="Include" />
           <e p="SelectionSort.cs" t="Include" />
-          <e p="Shellsort.cs" t="Include" />
+          <e p="ShellSort.cs" t="Include" />
           <e p="ShuffleSort.cs" t="Include" />
         </e>
         <e p="Structure" t="Include">

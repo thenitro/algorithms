@@ -21,7 +21,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestConvexHull();
+            new PartitionProblem();
+            //TestConvexHull();
             //TestShuffleSort();
             //new MatrixChainMultiplication();
             //TestShellSort();
