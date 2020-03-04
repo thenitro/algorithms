@@ -21,7 +21,8 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            new PartitionProblem();
+            TestMergeSort();
+            //new PartitionProblem();
             //TestConvexHull();
             //TestShuffleSort();
             //new MatrixChainMultiplication();
@@ -81,6 +82,15 @@ namespace Algorithms
             //TestLock();
             //TestFibonacci();
             //TestBinarySearch();
+        }
+
+        private static void TestMergeSort()
+        {
+            var array = new int[] {8, 9, 7, 6, 5, 4, 3, 2, 1};
+            
+            MergeSort.Sort(array);
+
+            Console.WriteLine(string.Join(", ", array));
         }
 
         private static void TestConvexHull()

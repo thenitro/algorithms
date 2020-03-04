@@ -83,6 +83,7 @@
     <Compile Include="Search\BinarySearch.cs" />
     <Compile Include="Sort\BinarySort.cs" />
     <Compile Include="Sort\InsertionSort.cs" />
+    <Compile Include="Sort\MergeSort.cs" />
     <Compile Include="Sort\SelectionSort.cs" />
     <Compile Include="Sort\ShellSort.cs" />
     <Compile Include="Sort\ShuffleSort.cs" />

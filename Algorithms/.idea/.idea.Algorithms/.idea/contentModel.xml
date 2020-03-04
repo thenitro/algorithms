@@ -72,6 +72,7 @@
         <e p="Sort" t="Include">
           <e p="BinarySort.cs" t="Include" />
           <e p="InsertionSort.cs" t="Include" />
+          <e p="MergeSort.cs" t="Include" />
           <e p="QuickSort.cs" t="Include" />
           <e p="SelectionSort.cs" t="Include" />
           <e p="ShellSort.cs" t="Include" />
