@@ -1,5 +1,3 @@
-using System;
-
 namespace Algorithms.Structure
 {
     public class Point

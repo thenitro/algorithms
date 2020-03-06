@@ -21,7 +21,10 @@ namespace Algorithms
     {
         public static void Main(string[] args)
         {
-            TestMergeSort();
+            //new IsKindOfSorted();
+
+            new CuttingRod();
+            //TestMergeSort();
             //new PartitionProblem();
             //TestConvexHull();
             //TestShuffleSort();

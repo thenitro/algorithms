@@ -49,6 +49,7 @@
     <Compile Include="DynamicProgramming\BytelandianGoldCoins.cs" />
     <Compile Include="DynamicProgramming\CoinChange.cs" />
     <Compile Include="DynamicProgramming\CountNumberOfWaysToCoverDistance.cs" />
+    <Compile Include="DynamicProgramming\CuttingRod.cs" />
     <Compile Include="DynamicProgramming\EditDistance.cs" />
     <Compile Include="DynamicProgramming\Factorial.cs" />
     <Compile Include="DynamicProgramming\Fibonacci.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="DynamicProgramming\UglyNumbers.cs" />
     <Compile Include="Median\Median.cs" />
     <Compile Include="Other\ConvexHull.cs" />
+    <Compile Include="Other\IsKindOfSorted.cs" />
     <Compile Include="Other\MajorityElements.cs" />
     <Compile Include="Pathfinding\BfsPathfinding.cs" />
     <Compile Include="Pathfinding\GraphsPathfinding.cs" />
