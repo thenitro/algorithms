@@ -66,6 +66,7 @@
     <Compile Include="DynamicProgramming\NumberOfWaysToFormN.cs" />
     <Compile Include="DynamicProgramming\SubsetSumProblem.cs" />
     <Compile Include="DynamicProgramming\UglyNumbers.cs" />
+    <Compile Include="DynamicProgramming\WordBreakProblem.cs" />
     <Compile Include="Median\Median.cs" />
     <Compile Include="Other\ConvexHull.cs" />
     <Compile Include="Other\IsKindOfSorted.cs" />

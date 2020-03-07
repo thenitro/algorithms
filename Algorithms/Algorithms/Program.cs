@@ -23,7 +23,8 @@ namespace Algorithms
         {
             //new IsKindOfSorted();
 
-            new CuttingRod();
+            new WordBreakProblem();
+            //new CuttingRod();
             //TestMergeSort();
             //new PartitionProblem();
             //TestConvexHull();
