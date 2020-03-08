@@ -58,6 +58,7 @@
     <Compile Include="DynamicProgramming\LongestCommonSubsequence.cs" />
     <Compile Include="DynamicProgramming\LongestIncreasingSubsequence.cs" />
     <Compile Include="DynamicProgramming\MatrixChainMultiplication.cs" />
+    <Compile Include="DynamicProgramming\MaximumProductCutting.cs" />
     <Compile Include="DynamicProgramming\OptimalStrategyForAGame.cs" />
     <Compile Include="DynamicProgramming\PartitionProblem.cs" />
     <Compile Include="DynamicProgramming\PartitionSetIntoTwoSubsets.cs" />

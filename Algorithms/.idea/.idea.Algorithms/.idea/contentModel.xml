@@ -32,6 +32,7 @@
           <e p="LongestCommonSubsequence.cs" t="Include" />
           <e p="LongestIncreasingSubsequence.cs" t="Include" />
           <e p="MatrixChainMultiplication.cs" t="Include" />
+          <e p="MaximumProductCutting.cs" t="Include" />
           <e p="NumberOfWaysToFormN.cs" t="Include" />
           <e p="OptimalStrategyForAGame.cs" t="Include" />
           <e p="PartitionProblem.cs" t="Include" />
