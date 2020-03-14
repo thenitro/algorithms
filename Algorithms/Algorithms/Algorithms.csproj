@@ -50,6 +50,7 @@
     <Compile Include="DynamicProgramming\CoinChange.cs" />
     <Compile Include="DynamicProgramming\CountNumberOfWaysToCoverDistance.cs" />
     <Compile Include="DynamicProgramming\CuttingRod.cs" />
+    <Compile Include="DynamicProgramming\DiceThrow.cs" />
     <Compile Include="DynamicProgramming\EditDistance.cs" />
     <Compile Include="DynamicProgramming\Factorial.cs" />
     <Compile Include="DynamicProgramming\Fibonacci.cs" />

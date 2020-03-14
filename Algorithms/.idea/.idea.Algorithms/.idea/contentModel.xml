@@ -24,6 +24,7 @@
           <e p="CoinChange.cs" t="Include" />
           <e p="CountNumberOfWaysToCoverDistance.cs" t="Include" />
           <e p="CuttingRod.cs" t="Include" />
+          <e p="DiceThrow.cs" t="Include" />
           <e p="EditDistance.cs" t="Include" />
           <e p="Factorial.cs" t="Include" />
           <e p="Fibonacci.cs" t="Include" />

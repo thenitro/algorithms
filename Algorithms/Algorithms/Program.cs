@@ -23,7 +23,8 @@ namespace Algorithms
         {
             //new IsKindOfSorted();
 
-            new MaximumProductCutting();
+            new DiceThrow();
+            //new MaximumProductCutting();
             //new WordBreakProblem();
             //new CuttingRod();
             //TestMergeSort();
