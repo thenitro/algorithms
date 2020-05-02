@@ -6,25 +6,18 @@ namespace Algorithms.Sort
     {
         public static void Sort(int[] array)
         {
-            var aux = new int[array.Length];
-            SortHelper(aux, array, 0, array.Length - 1);
-        }
+            var N = array.Length;
+            var aux = new int[N];
 
-        private static void SortHelper(int[] aux, int[] array, int lo, int hi)
-        {
-            if (hi <= lo)
+            for (var sz = 1; sz < N; sz += sz)
             {
-                return;
+                for (var i = 0; i < N - sz; i += sz + sz)
+                {
+                    Merge(aux, array, i, Math.Min(i + sz + sz - 1, N - 1), i + sz - 1);
+                }
             }
-
-            var middle = lo + (hi - lo) / 2;
-            
-            SortHelper(aux, array, lo, middle);
-            SortHelper(aux, array, middle + 1, hi);
-            
-            Merge(aux, array, lo, hi, middle);
         }
-
+        
         private static void Merge(int[] aux, int[] array, int lo, int hi, int mid)
         {
             for (int k = lo; k <= hi; k++)
