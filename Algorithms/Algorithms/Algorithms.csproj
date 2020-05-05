@@ -46,6 +46,7 @@
     <Compile Include="Concurency\Examples\TimeoutMutexExample.cs" />
     <Compile Include="DynamicProgramming\BellNumbers.cs" />
     <Compile Include="DynamicProgramming\BooleanParenthesizationProblem.cs" />
+    <Compile Include="DynamicProgramming\BoxStackingProblem.cs" />
     <Compile Include="DynamicProgramming\BytelandianGoldCoins.cs" />
     <Compile Include="DynamicProgramming\CoinChange.cs" />
     <Compile Include="DynamicProgramming\CountNumberOfWaysToCoverDistance.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="RandomTasks\SteppingNumbers.cs" />
     <Compile Include="Search\BinarySearch.cs" />
     <Compile Include="Sort\BinarySort.cs" />
+    <Compile Include="Sort\HeapSort.cs" />
     <Compile Include="Sort\InsertionSort.cs" />
     <Compile Include="Sort\MergeSort.cs" />
     <Compile Include="Sort\SelectionSort.cs" />

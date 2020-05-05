@@ -20,6 +20,7 @@
         <e p="DynamicProgramming" t="Include">
           <e p="BellNumbers.cs" t="Include" />
           <e p="BooleanParenthesizationProblem.cs" t="Include" />
+          <e p="BoxStackingProblem.cs" t="Include" />
           <e p="BytelandianGoldCOins.cs" t="Include" />
           <e p="CoinChange.cs" t="Include" />
           <e p="CountNumberOfWaysToCoverDistance.cs" t="Include" />
@@ -76,6 +77,7 @@
         </e>
         <e p="Sort" t="Include">
           <e p="BinarySort.cs" t="Include" />
+          <e p="HeapSort.cs" t="Include" />
           <e p="InsertionSort.cs" t="Include" />
           <e p="MergeSort.cs" t="Include" />
           <e p="QuickSort.cs" t="Include" />

@@ -23,7 +23,9 @@ namespace Algorithms
         {
             //new IsKindOfSorted();
 
-            new DiceThrow();
+            new BoxStackingProblem();
+            //TestHeapSort();
+            //new DiceThrow();
             //new MaximumProductCutting();
             //new WordBreakProblem();
             //new CuttingRod();
@@ -90,6 +92,15 @@ namespace Algorithms
             //TestBinarySearch();
         }
 
+        private static void TestHeapSort()
+        {
+            var array = new int[] {8, 9, 7, 6, 5, 4, 3, 2, 1};
+            
+            HeapSort.Sort(array);
+
+            Console.WriteLine(string.Join(", ", array));
+        }
+        
         private static void TestMergeSort()
         {
             var array = new int[] {8, 9, 7, 6, 5, 4, 3, 2, 1};
