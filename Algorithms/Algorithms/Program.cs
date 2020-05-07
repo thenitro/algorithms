@@ -22,9 +22,11 @@ namespace Algorithms
         public static void Main(string[] args)
         {
             //new IsKindOfSorted();
-
-            new BoxStackingProblem();
             //TestHeapSort();
+            
+            
+            
+            //new BoxStackingProblem();
             //new DiceThrow();
             //new MaximumProductCutting();
             //new WordBreakProblem();

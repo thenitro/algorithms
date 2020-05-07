@@ -1,5 +1,3 @@
-using System.Runtime.InteropServices;
-
 namespace Algorithms.Structure.Heap
 {
     public class MinHeap
