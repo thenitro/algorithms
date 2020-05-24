@@ -2,7 +2,6 @@
 using Algorithms.Structure;
 using Algorithms.Structure.Heap;
 using Algorithms.Structure.Tree;
-using UnityEngine;
 
 namespace Algorithms.Graphics
 {
@@ -57,8 +56,6 @@ namespace Algorithms.Graphics
                 {
                     tree.Delete(line);
                 }
-                
-                Debug.Log(line + " " + tree.PrintNode(tree.Root));
             }
             
             return result;

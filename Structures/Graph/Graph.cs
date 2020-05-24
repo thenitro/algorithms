@@ -7,21 +7,23 @@ namespace Algorithms.Structure
     {
         private readonly List<int> Empty = new List<int>();
         
-        private Dictionary<int, List<int>> _graph;
+        private readonly Dictionary<int, List<int>> _graph;
+        public HashSet<int> Vertices { get; }
 
-        private bool _directional;
-        private int _vertices;
+        private readonly bool _directional;
 
         public Graph(bool directional)
         {
             _directional = directional;
-            _vertices = 0;
+            
+            Vertices = new HashSet<int>();
             _graph = new Dictionary<int, List<int>>();
         }
 
         public void AddEdge(int u, int v)
         {
-            _vertices = Math.Max(_vertices, Math.Max(u, v) + 1);
+            AddVertex(u);
+            AddVertex(v);
             
             AddHelper(_graph, u, v);
 
@@ -29,6 +31,16 @@ namespace Algorithms.Structure
             {
                 AddHelper(_graph, v, u);
             }
+        }
+
+        private void AddVertex(int v)
+        {
+            if (Vertices.Contains(v))
+            {
+                return;
+            }
+            
+            Vertices.Add(v);
         }
 
         private void AddHelper(Dictionary<int, List<int>> graph, int u, int v)
@@ -154,11 +166,11 @@ namespace Algorithms.Structure
 
         public int[,] TransitiveClosure()
         {
-            var result = new int[_vertices, _vertices];
+            var result = new int[Vertices.Count, Vertices.Count];
 
-            for (var i = 0; i < _vertices; i++)
+            foreach (var vertex in Vertices)
             {
-                TransitiveClosureUtil(i, i, result);
+                TransitiveClosureUtil(vertex, vertex, result);
             }
 
             return result;
@@ -213,28 +225,31 @@ namespace Algorithms.Structure
                 return -1;
             }
             
-            var visited = new bool[_vertices];
+            var visited = new HashSet<int>();
             var v = 0;
 
-            for (var i = 0; i < _vertices; i++)
+            foreach (var vertex in Vertices)
             {
-                if (visited[i] == false)
+                if (!visited.Contains(vertex))
                 {
-                    FindMotherHelper(i, visited);
-                    v = i;
+                    FindMotherHelper(vertex, visited);
+                    v = vertex;
                 }
             }
-            
-            for (var i = 0; i < _vertices; i++)
+
+            foreach (var vertex in Vertices)
             {
-                visited[i] = false;
+                if (Vertices.Contains(vertex))
+                {
+                    Vertices.Remove(vertex);
+                }
             }
             
             FindMotherHelper(v, visited);
 
-            for (var i = 0; i < _vertices; i++)
+            foreach (var vertex in Vertices)
             {
-                if (visited[i] == false)
+                if (!visited.Contains(vertex))
                 {
                     return -1;
                 }
@@ -243,9 +258,9 @@ namespace Algorithms.Structure
             return v;
         }
 
-        private void FindMotherHelper(int v, bool[] visited)
+        private void FindMotherHelper(int v, HashSet<int> visited)
         {
-            visited[v] = true;
+            visited.Add(v);
 
             if (!_graph.ContainsKey(v))
             {
@@ -254,7 +269,7 @@ namespace Algorithms.Structure
 
             foreach (var i in _graph[v])
             {
-                if (visited[i] == true)
+                if (visited.Contains(i))
                 {
                     continue;
                 }
@@ -272,7 +287,7 @@ namespace Algorithms.Structure
 
             var result = new List<List<int>>();
             
-            var visited = new bool[_vertices];
+            var visited = new HashSet<int>();
 
             FindAllPathsHelper(source, destination, visited, new List<int>(), result);
 
@@ -281,10 +296,10 @@ namespace Algorithms.Structure
 
         private void FindAllPathsHelper(
             int u, int destination, 
-            bool[] visited, List<int> path, 
+            HashSet<int> visited, List<int> path, 
             List<List<int>> result)
         {
-            visited[u] = true;
+            visited.Add(u);
             path.Add(u);
 
             if (u == destination)
@@ -295,7 +310,7 @@ namespace Algorithms.Structure
             {
                 foreach (var i in _graph[u])
                 {
-                    if (visited[i])
+                    if (visited.Contains(i))
                     {
                         continue;
                     }
@@ -305,7 +320,7 @@ namespace Algorithms.Structure
             }
 
             path.RemoveAt(path.Count - 1);
-            visited[u] = false;
+            visited.Remove(u);
         }
     }
 }
