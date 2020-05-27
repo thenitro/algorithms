@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Algorithms.Structure
+namespace Algorithms.Structure.Graphs
 {
     public class Graph
     {
@@ -10,11 +10,11 @@ namespace Algorithms.Structure
         private readonly Dictionary<int, List<int>> _graph;
         public HashSet<int> Vertices { get; }
 
-        private readonly bool _directional;
+        protected bool _directional;
 
-        public Graph(bool directional)
+        public Graph()
         {
-            _directional = directional;
+            _directional = false;
             
             Vertices = new HashSet<int>();
             _graph = new Dictionary<int, List<int>>();
@@ -144,26 +144,6 @@ namespace Algorithms.Structure
             return true;
         }
 
-        public Stack<int> TopologicalSort()
-        {
-            var stack = new Stack<int>();
-
-            var list = _graph.Keys;
-            var visited = new Dictionary<int, bool>();
-
-            foreach (var i in list)
-            {
-                if (visited.ContainsKey(i))
-                {
-                    continue;
-                }
-                
-                TopologicalSortTraverse(i, visited, stack);
-            }
-
-            return stack;
-        }
-
         public int[,] TransitiveClosure()
         {
             var result = new int[Vertices.Count, Vertices.Count];
@@ -192,30 +172,6 @@ namespace Algorithms.Structure
                     TransitiveClosureUtil(u, i, result);
                 }
             }
-        }
-        
-        private void TopologicalSortTraverse(int v, Dictionary<int, bool> visited, Stack<int> stack)
-        {
-            visited[v] = true;
-
-            if (_graph.ContainsKey(v))
-            {
-                
-                var list = _graph[v];
-                
-                foreach (var i in _graph[v])
-                {
-                    if (visited.ContainsKey(i))
-                    {
-                        continue;
-                    }
-                
-                    TopologicalSortTraverse(i, visited, stack);
-                }                
-            }
-            
-            Console.WriteLine(v);
-            stack.Push(v);
         }
 
         public int FindMother()

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Algorithms.Structure.Graphs;
 
 namespace Algorithms.Structure
 {

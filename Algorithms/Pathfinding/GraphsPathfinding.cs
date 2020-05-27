@@ -1,7 +1,5 @@
-using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using Algorithms.Structure;
+using Algorithms.Structure.Graphs;
 
 namespace Algorithms.Pathfinding
 {

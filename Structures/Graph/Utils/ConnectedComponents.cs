@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Algorithms.Structure
+namespace Algorithms.Structure.Graphs.Utils
 {
     public class ConnectedComponents
     {
