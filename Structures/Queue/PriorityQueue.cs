@@ -7,7 +7,13 @@ namespace Algorithms.Structure.Queue
     public class PriorityQueue<T>
     {
         private List<IComparable<T>> _list = new List<IComparable<T>>();
-        
+
+        public PriorityQueue()
+        {
+        }
+
+        public bool IsEmpty => _list.Count == 0;
+
         public void Enqueue(IComparable<T> item)
         {
             var count = _list.Count;
@@ -20,7 +26,7 @@ namespace Algorithms.Structure.Queue
                 var i = 0;
                 
                 for (i = count - 1; i >= 0; i--)
-                {
+                {   
                     if (item.CompareTo((T)_list[i]) < 1)
                     {
                         WriteValue(i, _list[i]);
