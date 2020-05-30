@@ -54,6 +54,15 @@ namespace Algorithms.Structure.Queue
 
             return item;
         }
+
+        public IComparable<T> DelMin()
+        {
+            var item = _list[0];
+
+            _list.RemoveAt(0);
+            
+            return item;
+        }
         
         private void WriteValue(int i, IComparable<T> item)
         {
