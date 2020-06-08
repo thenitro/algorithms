@@ -35,7 +35,7 @@ namespace Algorithms.algorithms.Structures.Graph.Weighted
 
             _edges.Add(edge);
 
-            var v = edge.From();
+            var v = edge.From;
             AddHelper(v, edge);
         }
 

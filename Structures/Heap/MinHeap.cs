@@ -44,7 +44,7 @@ namespace Algorithms.Structure.Heap
         {
             if (_count <= 0)
             {
-                return default;
+                return default(HeapNode<T>);
             }
 
             if (_count == 1)

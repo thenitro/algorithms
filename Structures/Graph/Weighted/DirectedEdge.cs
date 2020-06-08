@@ -6,11 +6,11 @@ namespace Algorithms.algorithms.Structures.Graph.Weighted
     {
         public int From { get; }
         public int To { get; }
-        public int Weight { get; }
+        public double Weight { get; }
 
-        public DirectedEdge(int @from, int to, double weight)
+        public DirectedEdge(int from, int to, double weight)
         {
-            From = @from;
+            From = from;
             To = to;
             Weight = weight;
         }
@@ -32,7 +32,7 @@ namespace Algorithms.algorithms.Structures.Graph.Weighted
 
         public override string ToString()
         {
-            return $"[ DirectedEdge v={_v}, w={To}, weight={Weight} ]";
+            return $"[ DirectedEdge v={From}, w={To}, weight={Weight} ]";
         }
     }
 }
