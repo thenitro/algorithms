@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace Algorithms.Structure.Tree
 {
@@ -161,6 +162,58 @@ namespace Algorithms.Structure.Tree
             }
 
             return true;
+        }
+
+        public string[] Keys()
+        {
+            var queue = new Queue<string>();
+            Collect(_root, string.Empty, queue);
+            return queue.ToArray();
+        }
+
+        private void Collect(TrieNode x, string prefix, Queue<string> q)
+        {
+            if (x == null)
+            {
+                return;
+            }
+
+            if (x.IsEndOfWord)
+            {
+                q.Enqueue(prefix);
+            }
+
+            for (var c = 0; c < TrieNode.AlphabetSize; c++)
+            {
+                Collect(x.Children[c], prefix + (char)(c + 'a'), q);
+            }
+        }
+
+        public string LongestPrefixOf(string query)
+        {
+            var length = LongestPrefixOfHelper(_root, query, 0, 0);
+            return query.Substring(0, length);
+        }
+
+        private int LongestPrefixOfHelper(TrieNode x, string query, int d, int length)
+        {
+            if (x == null)
+            {
+                return length;
+            }
+
+            if (x.IsEndOfWord)
+            {
+                length = d;
+            }
+
+            if (d == query.Length)
+            {
+                return length;
+            }
+
+            var c = query[d];
+            return LongestPrefixOfHelper(x.Children[c - 'a'], query, d + 1, length);
         }
     }
 }
