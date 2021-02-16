@@ -1,6 +1,6 @@
-#Union Find data structure
-###Also known as disjoint-set data structure or merge-find set
-##How to use
+# Union Find data structure
+### Also known as disjoint-set data structure or merge-find set
+## How to use
 Every implementation of algorithms shares same interface `IUnionFind`. 
 
 `IUnionFind.Connected` - returns true if two items are connected.
@@ -9,7 +9,7 @@ Every implementation of algorithms shares same interface `IUnionFind`.
 
 `IUnionFind.Unite` - unites two items in single set.
 
-##Analysis
+## Analysis
 Operation | Quick Find | Quick Union | QuickUnionOptimized
 ------------ | ------------- |  ------------- | -------------
 Memory | O(N) | O(N) | O(N)
