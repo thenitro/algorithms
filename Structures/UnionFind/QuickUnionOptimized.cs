@@ -1,6 +1,8 @@
+using Algorithms.Structure.UnionFind;
+
 namespace Algorithms.Structure
 {
-    public class DisjointUnionSets
+    public class DisjointUnionSets : IUnionFind
     {
         private int _size;
 
@@ -15,6 +17,11 @@ namespace Algorithms.Structure
             _parent = new int[size];
             
             MakeSet();
+        }
+
+        public bool Connected(int p, int q)
+        {
+            return Find(p) == Find(q);
         }
 
         public int Find(int x)

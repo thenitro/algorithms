@@ -1,6 +1,6 @@
 namespace Algorithms.Structure.UnionFind
 {
-    public class QuickFind
+    public class QuickFind : IUnionFind
     {
         private int[] _ids;
 
@@ -17,6 +17,11 @@ namespace Algorithms.Structure.UnionFind
         public bool Connected(int p, int q)
         {
             return _ids[p] == _ids[q];
+        }
+
+        public int Find(int x)
+        {
+            return _ids[x];
         }
 
         public void Union(int p, int q)

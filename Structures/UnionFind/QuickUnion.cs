@@ -1,6 +1,6 @@
 namespace Algorithms.Structure.UnionFind
 {
-    public class QuickUnion
+    public class QuickUnion : IUnionFind
     {
         private int[] _id;
 
@@ -16,18 +16,18 @@ namespace Algorithms.Structure.UnionFind
 
         public bool Connected(int p, int q)
         {
-            return Root(p) == Root(q);
+            return Find(p) == Find(q);
         }
 
         public void Union(int p, int q)
         {
-            var i = Root(p);
-            var j = Root(q);
+            var i = Find(p);
+            var j = Find(q);
 
             _id[i] = j;
         }
         
-        private int Root(int i)
+        public int Find(int i)
         {
             while (i != _id[i])
             {
