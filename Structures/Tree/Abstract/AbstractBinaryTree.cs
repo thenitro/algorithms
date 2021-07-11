@@ -48,6 +48,56 @@ namespace Algorithms.Structure.Tree.Abstract
 
             Console.WriteLine("Inorder: " + result);
         }
+
+        public List<BinaryTreeNode<IComparable>> GetLevelOrderTraversal()
+        {
+            var result = new List<BinaryTreeNode<IComparable>>();
+            var height = CalculateHeight();
+            for (var i = 1; i <= height; i++)
+            {
+                GetCurrentLevel(Root, i, result);
+            }
+
+            return result;
+        }
+
+        private void GetCurrentLevel(BinaryTreeNode<IComparable> node, int level, List<BinaryTreeNode<IComparable>> result)
+        {
+            if (node == null)
+            {
+                return;
+            }
+
+            if (level == 1)
+            {
+                result.Add(node);
+                return;
+            }
+
+            if (level > 1)
+            {
+                GetCurrentLevel(node.Left, level - 1, result);
+                GetCurrentLevel(node.Right, level - 1, result);
+            }
+        }
+
+        public int CalculateHeight()
+        {
+            return CalculateHeight(Root);
+        }
+
+        private int CalculateHeight(BinaryTreeNode<IComparable> node)
+        {
+            if (node == null)
+            {
+                return 0;
+            }
+
+            var lHeight = CalculateHeight(node.Left);
+            var rHeight = CalculateHeight(node.Right);
+
+            return Math.Max(lHeight, rHeight) + 1;
+        }
         
         public bool Has(IComparable value)
         {
